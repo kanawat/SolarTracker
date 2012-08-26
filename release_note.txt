@@ -1,0 +1,7 @@
+#### Revision 1.00 (26-AUG-2012) #####
+This is an initial version, all works are re-organize
+To do: 
+- fix 2000 pulse limitation during calibraion
+- Add Independent actuator length support
+- Auto shut-down communication if not active by certain time
+
