@@ -1,0 +1,10 @@
+>>> Warning 203 "solar_controller1.c" Line 327(1,1): Condition always TRUE
+>>> Warning 202 "solar_controller1.c" Line 26(6,10): Variable never used:   line
+>>> Warning 202 "solar_controller1.c" Line 301(13,14): Variable never used:   j
+>>> Warning 202 "solar_controller1.c" Line 302(11,16): Variable never used:   nPage
+>>> Warning 202 "solar_controller1.c" Line 303(10,18): Variable never used:   mfg_info
+>>> Warning 202 "solar_controller1.c" Line 304(10,14): Variable never used:   data
+>>> Warning 202 "solar_controller1.c" Line 307(10,15): Variable never used:   chcmd
+>>> Warning 202 "solar_controller1.c" Line 312(7,17): Variable never used:   time_index
+      Memory usage:   ROM=24%      RAM=24% - 42%
+      0 Errors,  8 Warnings.

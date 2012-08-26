@@ -1,0 +1,40 @@
+[PROJECT]
+Target=tracker2_2.HEX
+Development_Mode=2
+Processor=0x8458
+Processor_Text=PIC18F458
+ToolSuite=CCS
+
+[Directories]
+Include=
+Library=
+LinkerScript=
+
+[Target Data]
+FileList=G:\Solar_Tracker_Final\Code\Ver2_w_batt\tracker2_2.c
+BuildTool=C-COMPILER
+OptionString=+FH
+AdditionalOptionString=
+BuildRequired=1
+
+[tracker2_2.c]
+Type=4
+Path=
+FileList=
+BuildTool=
+OptionString=
+AdditionalOptionString=
+
+[mru-list]
+1=TRACKE~1.C
+
+[Windows]
+0=0000 TRACKE~1.C 0 0 796 451 3 0
+
+[Opened Files]
+1=tracker2_2.c
+2=
+3=
+[Units]
+Count=1
+1=tracker2_2.c (main)

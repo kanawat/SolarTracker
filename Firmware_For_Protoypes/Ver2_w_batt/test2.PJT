@@ -1,0 +1,39 @@
+[PROJECT]
+Target=test2.HEX
+Development_Mode=2
+Processor=0x8458
+Processor_Text=PIC18F458
+ToolSuite=CCS
+
+[Directories]
+Include=
+Library=
+LinkerScript=
+
+[Target Data]
+FileList=G:\Solar_Tracker_Final\Code\Ver2_w_batt\test2.c
+BuildTool=C-COMPILER
+OptionString=+FH
+AdditionalOptionString=
+BuildRequired=1
+
+[test2.c]
+Type=4
+Path=
+FileList=
+BuildTool=
+OptionString=
+AdditionalOptionString=
+
+[mru-list]
+1=test2.c
+
+[Windows]
+0=0000 test2.c 0 0 796 451 3 0
+
+[Opened Files]
+1=test2.c
+2=
+[Units]
+Count=1
+1=test2.c (main)

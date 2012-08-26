@@ -1,0 +1,14 @@
+>>> Warning 205 "test2.c" Line 153(1,1): Unsigned variable is never less than zero
+>>> Warning 204 "test2.c" Line 153(1,1): Condition always FALSE
+>>> Warning 205 "test2.c" Line 158(1,1): Unsigned variable is never less than zero
+>>> Warning 204 "test2.c" Line 158(1,1): Condition always FALSE
+>>> Warning 203 "test2.c" Line 607(1,1): Condition always TRUE
+>>> Warning 203 "test2.c" Line 1009(1,1): Condition always TRUE
+>>> Warning 216 "test2.c" Line 1091(0,1): Interrupts disabled during call to prevent re-entrancy:  (@delay_ms1)
+>>> Warning 216 "test2.c" Line 1091(0,1): Interrupts disabled during call to prevent re-entrancy:  (@DIV3232)
+>>> Warning 202 "test2.c" Line 99(15,23): Variable never used:   timer_ms
+>>> Warning 202 "test2.c" Line 585(9,11): Variable never used:   rt
+>>> Warning 202 "test2.c" Line 950(10,18): Variable never used:   temp_mem
+>>> Warning 202 "test2.c" Line 951(9,10): Variable never used:   i
+      Memory usage:   ROM=78%      RAM=14% - 23%
+      0 Errors,  12 Warnings.

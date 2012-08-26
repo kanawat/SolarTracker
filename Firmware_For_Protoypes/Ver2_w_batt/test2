@@ -1,0 +1,4 @@
+#include <18F458.h>
+#include <stdlib.h>
+#include <math.h>
+#fuses H4,NOWDT,WDT32,NOPROTECT,NOLVP,PUT,BROWNOUT,BORV27

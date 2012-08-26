@@ -1,0 +1,8 @@
+>>> Warning 203 "solar_controller1.c" Line 555(1,1): Condition always TRUE
+>>> Warning 203 "solar_controller1.c" Line 936(1,1): Condition always TRUE
+>>> Warning 216 "solar_controller1.c" Line 1006(0,1): Interrupts disabled during call to prevent re-entrancy:  (@DIV3232)
+>>> Warning 202 "solar_controller1.c" Line 538(6,8): Variable never used:   rt
+>>> Warning 202 "solar_controller1.c" Line 881(7,15): Variable never used:   temp_mem
+>>> Warning 202 "solar_controller1.c" Line 882(6,7): Variable never used:   i
+      Memory usage:   ROM=76%      RAM=14% - 24%
+      0 Errors,  6 Warnings.

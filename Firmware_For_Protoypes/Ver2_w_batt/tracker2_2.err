@@ -1,0 +1,14 @@
+>>> Warning 205 "tracker2_2.c" Line 161(1,1): Unsigned variable is never less than zero
+>>> Warning 204 "tracker2_2.c" Line 161(1,1): Condition always FALSE
+>>> Warning 205 "tracker2_2.c" Line 166(1,1): Unsigned variable is never less than zero
+>>> Warning 204 "tracker2_2.c" Line 166(1,1): Condition always FALSE
+>>> Warning 203 "tracker2_2.c" Line 615(1,1): Condition always TRUE
+>>> Warning 203 "tracker2_2.c" Line 1015(1,1): Condition always TRUE
+>>> Warning 216 "tracker2_2.c" Line 1101(0,1): Interrupts disabled during call to prevent re-entrancy:  (@delay_ms1)
+>>> Warning 216 "tracker2_2.c" Line 1101(0,1): Interrupts disabled during call to prevent re-entrancy:  (@DIV3232)
+>>> Warning 202 "tracker2_2.c" Line 101(15,23): Variable never used:   timer_ms
+>>> Warning 202 "tracker2_2.c" Line 593(9,11): Variable never used:   rt
+>>> Warning 202 "tracker2_2.c" Line 956(10,18): Variable never used:   temp_mem
+>>> Warning 202 "tracker2_2.c" Line 957(9,10): Variable never used:   i
+      Memory usage:   ROM=83%      RAM=18% - 24%
+      0 Errors,  12 Warnings.
