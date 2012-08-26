@@ -1,0 +1,49 @@
+_RETURN_
+CCP_1
+CCP_1_LOW
+CCP_1_HIGH
+CCP_2
+CCP_2_LOW
+CCP_2_HIGH
+PSP_DATA
+C1OUT
+C2OUT
+_Randseed
+pe
+pl
+ql
+pas
+qas
+pat
+qat
+flash_mfg_id
+
+Project Directory:
+    D:\PIC_Project\Solar_code\
+
+Project Files:
+    solar_lib.c
+    C:\Program Files\PICC\devices\18F458.h
+    C:\Program Files\PICC\drivers\stdlib.h
+    C:\Program Files\PICC\drivers\stddef.h
+    C:\Program Files\PICC\drivers\string.h
+    C:\Program Files\PICC\drivers\ctype.h
+    C:\Program Files\PICC\drivers\math.h
+
+Units:
+    solar_lib.c (main)
+
+Compiler Settings:
+    Processor:      PIC18F458
+    Pointer Size:   16
+    ADC Range:      0-1023
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+    Output file:    Relocatable
+
+Output Files:
+    Errors:      solar_lib.err
+    Ext Symbols: solar_lib.esym
+    Object:      solar_lib.o
+    Symbols:     solar_lib.osym

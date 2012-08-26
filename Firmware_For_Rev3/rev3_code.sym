@@ -1,0 +1,77 @@
+000     @SCRATCH
+001     @SCRATCH
+001     _RETURN_
+002     @SCRATCH
+003     @SCRATCH
+004     @SCRATCH
+005-006 strtok.save
+007-00A _Randseed
+00B-00E flash_mfg_id
+00F-010 strtok.save
+011-014 _Randseed
+015-018 flash_mfg_id
+F83     PSP_DATA
+FB4.6   C1OUT
+FB4.7   C2OUT
+FBB     CCP_2_LOW
+FBB-FBC CCP_2
+FBB     CCP_2_LOW
+FBC     CCP_2_HIGH
+FBE-FBF CCP_1
+FBE     CCP_1_LOW
+FBE-FBF CCP_1
+FBF     CCP_1_HIGH
+FC5     SSPCON2
+FC6     SSPCON1
+FC7     SSPSTAT
+FE9-FEA @WRITE_PROGRAM_MEMORY.P1
+FE9-FEA @READ_PROGRAM_MEMORY.P2
+FF6-FF8 @WRITE_PROGRAM_MEMORY.P1
+FF6-FF8 @READ_PROGRAM_MEMORY.P2
+
+ROM Allocation:
+0004  init_spi
+0076  MAIN
+001C  flash_read_mfg_id
+0076  @cinit
+0136  StrtoulGO
+0136  StrtolGO
+0136  StrtoulGO
+0136  StrtolGO
+
+Project Directory:
+    E:\solar_code\
+
+Project Files:
+    rev3_code.C
+    main.c (link)
+    solar_lib.c (link)
+    C:\Program Files\PICC\devices\18F458.h (link)
+    C:\Program Files\PICC\drivers\stdlib.h (link)
+    C:\Program Files\PICC\drivers\stddef.h (link)
+    C:\Program Files\PICC\drivers\string.h (link)
+    C:\Program Files\PICC\drivers\ctype.h (link)
+    C:\Program Files\PICC\drivers\math.h (link)
+
+Units:
+    E:\solar_code\main.o
+    E:\solar_code\solar_lib.o
+
+Compiler Settings:
+    Processor:      PIC18F458
+    Pointer Size:   16
+    ADC Range:      0-255
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+
+Output Files:
+    Errors:      rev3_code.err
+    Ext Symbols: rev3_code.esym
+    INHX32:      rev3_code.hex
+    Symbols:     rev3_code.sym
+    List:        rev3_code.lst
+    Debug/COFF:  rev3_code.cof
+    Project:     rev3_code.PJT
+    Call Tree:   rev3_code.tre
+    Statistics:  rev3_code.sta

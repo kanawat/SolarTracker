@@ -1,0 +1,51 @@
+
+ROM used: 174 (1%)
+          174 (1%) including unused fragments
+
+          0 Average locations per line
+          0 Average locations per statement
+
+RAM used: 25 (2%) at main() level
+          25 (2%) worst case
+
+Stack used: 1 worst case (out of 31 total available)
+
+Lines Stmts  %   Files
+----- ----- ---  -----
+    0     0   0  rev3_code.C
+   22     6   1  main.c
+   20     9   1  solar_lib.c
+  397     0   0  C:\Program Files\PICC\devices\18F458.h
+ 1493   380  50  C:\Program Files\PICC\drivers\stdlib.h
+   28     0   0  C:\Program Files\PICC\drivers\stddef.h
+  409   121  16  C:\Program Files\PICC\drivers\string.h
+   28     0   0  C:\Program Files\PICC\drivers\ctype.h
+ 2104   238  32  C:\Program Files\PICC\drivers\math.h
+----- -----
+ 4501   754 Total
+
+Page ROM  %  RAM   Vol Diff  Functions:
+---- --- --- ---   --- ----  ----------
+0     24   7   0    52  1.9  init_spi
+0     56  16   0    38  1.2  MAIN
+0     90  26   0   272  2.3  flash_read_mfg_id
+
+Program metrics:
+    Functions               3
+    Statements              754
+    Comments                36
+    Volume (V)              463
+    Difficilty (D)          6.0
+    Effort to implement (E) 2764
+    Time to implement (T)   3 minutes
+    Est Delivered Bugs (B)  0
+    Cyclomatic Complexity   1
+    Maintainability (MI)    16
+
+ Segment     Used  Free
+-----------  ----  ----
+00000-00002     4  0  
+00004-07FFE   170  32594  
+
+
+

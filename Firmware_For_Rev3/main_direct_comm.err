@@ -1,0 +1,19 @@
+>>> Warning 203 "L:\solar_code\solar_lib.h" Line 522(1,1): Condition always TRUE
+>>> Warning 203 "main_direct_comm.c" Line 258(1,1): Condition always TRUE
+>>> Warning 203 "main_direct_comm.c" Line 280(1,1): Condition always TRUE
+>>> Warning 203 "main_direct_comm.c" Line 392(1,1): Condition always TRUE
+>>> Warning 203 "main_direct_comm.c" Line 418(1,1): Condition always TRUE
+>>> Warning 216 "main_direct_comm.c" Line 421(0,1): Interrupts disabled during call to prevent re-entrancy:  (@DIV3232)
+>>> Warning 216 "main_direct_comm.c" Line 421(0,1): Interrupts disabled during call to prevent re-entrancy:  (@delay_ms1)
+>>> Warning 216 "main_direct_comm.c" Line 421(0,1): Interrupts disabled during call to prevent re-entrancy:  (button_scan)
+>>> Warning 202 "L:\solar_code\solar_lib.h" Line 111(23,39): Variable never used:   de_stuffing_mask
+>>> Warning 202 "L:\solar_code\solar_lib.h" Line 112(21,35): Variable never used:   posted_cmd_len
+>>> Warning 202 "L:\solar_code\solar_lib.h" Line 113(6,18): Variable never used:   command_byte
+>>> Warning 202 "L:\solar_code\solar_lib.h" Line 114(7,18): Variable never used:   aux_command
+>>> Warning 202 "L:\solar_code\solar_lib.h" Line 130(7,14): Variable never used:   act_len
+>>> Warning 202 "L:\solar_code\solar_lib.h" Line 255(8,9): Variable never used:   i
+>>> Warning 202 "L:\solar_code\solar_lib.h" Line 416(8,21): Variable never used:   stuffing_mask
+>>> Warning 202 "main_direct_comm.c" Line 268(6,7): Variable never used:   k
+>>> Warning 202 "main_direct_comm.c" Line 342(15,16): Variable never used:   i
+      Memory usage:   ROM=52%      RAM=29% - 31%
+      0 Errors,  17 Warnings.

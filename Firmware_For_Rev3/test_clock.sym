@@ -1,0 +1,139 @@
+000     @SCRATCH
+001     @SCRATCH
+001     _RETURN_
+002     @SCRATCH
+003     @SCRATCH
+004     @SCRATCH
+005     @INTERRUPT_AREA
+006     @INTERRUPT_AREA
+007     @INTERRUPT_AREA
+008     @INTERRUPT_AREA
+009     @INTERRUPT_AREA
+00A     @INTERRUPT_AREA
+00B     @INTERRUPT_AREA
+00C     @INTERRUPT_AREA
+00D     @INTERRUPT_AREA
+00E     @INTERRUPT_AREA
+00F     @INTERRUPT_AREA
+010     @INTERRUPT_AREA
+011     @INTERRUPT_AREA
+012     @INTERRUPT_AREA
+013     @INTERRUPT_AREA
+014     @INTERRUPT_AREA
+015     @INTERRUPT_AREA
+016     @INTERRUPT_AREA
+017     @INTERRUPT_AREA
+018     @INTERRUPT_AREA
+019-01A strtok.save
+01B-01E _Randseed
+01F     flag
+020     flag2
+021     LED_status
+022-025 timer_sec
+026-029 tick
+02A-02D tick2
+02E-031 nDay
+032-033 startup_counter
+034-047 cmd_msg
+048     cmd_len
+049     nButton
+04A-05D tmp_str
+05E-071 tmp_str2
+072-073 wall_pwr_read
+074-077 flash_mfg_id
+078     flash_stat
+079     flash_page_data
+07A     flash_page_data2
+07B-07C move_act_time_out
+07D-07E actuator_pulse
+07F-082 act_len
+083-08A current_act_position
+08B-08C target_act_position
+08D-094 act_full_stroke_tick
+095-096 act_max_stroke
+097-098 act_min_stroke
+099-09A act_safety_stroke
+09B-09C latitude
+09D-09E longitude
+09F-0A0 altitude
+0A1     actuator_move_mask
+0A2-0A3 MAIN.relay_time
+0A4     MAIN.act_loop
+0A5     MAIN.i
+0A6     @delay_ms1.P1
+0A6     MAIN.@SCRATCH1
+0A7     MAIN.@SCRATCH2
+0A8     recive_cmd.c
+0A9     recive_cmd.@SCRATCH1
+0AA     recive_cmd.@SCRATCH2
+0AB     recive_cmd.@SCRATCH3
+F83     PORTD
+F83     PSP_DATA
+F9D     PIE1
+F9E     PIR1
+FAB     RCSTA
+FAC     TXSTA
+FB4.6   C1OUT
+FB4.7   C2OUT
+FBB     CCP_2_LOW
+FBB-FBC CCP_2
+FBC     CCP_2_HIGH
+FBE     CCP_1_LOW
+FBE-FBF CCP_1
+FBF     CCP_1_HIGH
+FC5     SSPCON2
+FC6     SSPCON1
+FC7     SSPSTAT
+FCD     T1CON
+FCE     TMR1
+FCF     TMR1H
+FE9-FEA @MEMSET.P1
+FE9-FEA @READ_PROGRAM_MEMORY.P2
+FE9-FEA @WRITE_PROGRAM_MEMORY.P3
+FF6-FF8 @WRITE_PROGRAM_MEMORY.P1
+FF6-FF8 @READ_PROGRAM_MEMORY.P2
+
+ROM Allocation:
+0170  @delay_ms1
+00AA  display_LED
+00DE  timer1_ovf
+0158  init_spi
+00F0  recive_cmd
+0198  MAIN
+0198  @cinit
+0136  StrtoulGO
+0136  StrtolGO
+
+Project Directory:
+    L:\solar_code\
+
+Project Files:
+    test_clock.c
+    solar_lib.h
+    C:\Program Files\PICC\devices\18F458.h
+    C:\Program Files\PICC\drivers\stdlib.h
+    C:\Program Files\PICC\drivers\stddef.h
+    C:\Program Files\PICC\drivers\string.h
+    C:\Program Files\PICC\drivers\ctype.h
+
+Units:
+    test_clock.c (main)
+
+Compiler Settings:
+    Processor:      PIC18F458
+    Pointer Size:   16
+    ADC Range:      0-1023
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+
+Output Files:
+    Errors:      test_clock.err
+    Ext Symbols: test_clock.esym
+    INHX32:      test_clock.hex
+    Symbols:     test_clock.sym
+    List:        test_clock.lst
+    Debug/COFF:  test_clock.cof
+    Project:     test_clock.PJT
+    Call Tree:   test_clock.tre
+    Statistics:  test_clock.sta

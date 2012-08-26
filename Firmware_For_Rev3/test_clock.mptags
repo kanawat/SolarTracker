@@ -1,0 +1,36 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.5.4	//
+!_TAG_REVISION_NAME	MCHPTags	//
+!_TAG_REVISION_VERSION	6.0.1	//
+TMR1H	L:\solar_code\test_clock.c	28;"	l	line:28
+act_loop	L:\solar_code\test_clock.c	321;"	l	line:321
+atoi	L:\solar_code\test_clock.c	204;"	p	line:204	file:
+atoi	L:\solar_code\test_clock.c	208;"	p	line:208	file:
+atol	L:\solar_code\test_clock.c	119;"	p	line:119	file:
+atol	L:\solar_code\test_clock.c	127;"	p	line:127	file:
+atol	L:\solar_code\test_clock.c	136;"	p	line:136	file:
+atol	L:\solar_code\test_clock.c	146;"	p	line:146	file:
+atol	L:\solar_code\test_clock.c	173;"	p	line:173	file:
+atol	L:\solar_code\test_clock.c	178;"	p	line:178	file:
+button_menu	L:\solar_code\test_clock.c	253;"	f	line:253
+button_scan	L:\solar_code\test_clock.c	3;"	f	line:3
+c	L:\solar_code\test_clock.c	89;"	l	line:89
+i	L:\solar_code\test_clock.c	104;"	l	line:104
+i	L:\solar_code\test_clock.c	321;"	l	line:321
+i	L:\solar_code\test_clock.c	4;"	l	line:4
+init_spi	L:\solar_code\test_clock.c	81;"	f	line:81
+j	L:\solar_code\test_clock.c	104;"	l	line:104
+k	L:\solar_code\test_clock.c	254;"	l	line:254
+main	L:\solar_code\test_clock.c	319;"	f	line:319
+move_act_time_out	L:\solar_code\test_clock.c	173;"	l	line:173
+move_act_time_out	L:\solar_code\test_clock.c	178;"	l	line:178
+process_cmd_msg	L:\solar_code\test_clock.c	103;"	f	line:103
+recive_cmd	L:\solar_code\test_clock.c	87;"	f	line:87
+relay_time	L:\solar_code\test_clock.c	320;"	l	line:320
+target_act	L:\solar_code\test_clock.c	255;"	l	line:255
+timer1_ovf	L:\solar_code\test_clock.c	23;"	f	line:23
+x80	L:\solar_code\test_clock.c	27;"	l	line:27

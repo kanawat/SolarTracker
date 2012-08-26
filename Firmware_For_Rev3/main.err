@@ -1,0 +1,17 @@
+>>> Warning 203 "D:\PIC_Project\Solar_code\solar_lib.h" Line 582(1,1): Condition always TRUE
+>>> Warning 203 "main.c" Line 480(1,1): Condition always TRUE
+>>> Warning 203 "main.c" Line 596(1,1): Condition always TRUE
+>>> Warning 203 "main.c" Line 620(1,1): Condition always TRUE
+>>> Warning 216 "main.c" Line 623(0,1): Interrupts disabled during call to prevent re-entrancy:  (stuff_data)
+>>> Warning 216 "main.c" Line 623(0,1): Interrupts disabled during call to prevent re-entrancy:  (@delay_ms1)
+>>> Warning 216 "main.c" Line 623(0,1): Interrupts disabled during call to prevent re-entrancy:  (@DIV3232)
+>>> Warning 216 "main.c" Line 623(0,1): Interrupts disabled during call to prevent re-entrancy:  (send_data)
+>>> Warning 216 "main.c" Line 623(0,1): Interrupts disabled during call to prevent re-entrancy:  (button_scan)
+>>> Warning 202 "D:\PIC_Project\Solar_code\solar_lib.h" Line 128(7,14): Variable never used:   act_len
+>>> Warning 202 "D:\PIC_Project\Solar_code\solar_lib.h" Line 254(8,9): Variable never used:   i
+>>> Warning 202 "main.c" Line 136(9,10): Variable never used:   i
+>>> Warning 202 "main.c" Line 136(11,12): Variable never used:   j
+>>> Warning 202 "main.c" Line 468(9,10): Variable never used:   k
+>>> Warning 202 "main.c" Line 539(18,19): Variable never used:   i
+      Memory usage:   ROM=32%      RAM=11% - 15%
+      0 Errors,  15 Warnings.

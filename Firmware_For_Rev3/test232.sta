@@ -1,0 +1,44 @@
+
+ROM used: 146 (0%)
+          146 (0%) including unused fragments
+
+          0 Average locations per line
+          36 Average locations per statement
+
+RAM used: 6 (0%) at main() level
+          7 (0%) worst case
+
+Stack used: 1 worst case (out of 31 total available)
+
+Lines Stmts  %   Files
+----- ----- ---  -----
+   14     4 100  test232.c
+  397     0   0  C:\PROGRA~1\PICC\devices\18F458.h
+----- -----
+  411     4 Total
+
+Page ROM  %  RAM   Vol Diff  Functions:
+---- --- --- ---   --- ----  ----------
+0     42  14   1             @delay_ms1
+0     74  25   1    50  1.3  main
+0     26   9   0             @const62
+
+Program metrics:
+    Functions               1
+    Statements              4
+    Comments                90
+    Volume (V)              53
+    Difficilty (D)          1.0
+    Effort to implement (E) 53
+    Time to implement (T)   0 minutes
+    Est Delivered Bugs (B)  0
+    Cyclomatic Complexity   1
+    Maintainability (MI)    170
+
+ Segment     Used  Free
+-----------  ----  ----
+00000-00002     4  0  
+00004-07FFE   142  32622  
+
+
+

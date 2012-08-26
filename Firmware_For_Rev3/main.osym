@@ -1,0 +1,88 @@
+_RETURN_
+CCP_1
+CCP_1_LOW
+CCP_1_HIGH
+CCP_2
+CCP_2_LOW
+CCP_2_HIGH
+PSP_DATA
+C1OUT
+C2OUT
+_Randseed
+PORTD
+SSPSTAT
+SSPCON1
+SSPCON2
+PIE1
+RCSTA
+TXSTA
+PIR1
+TMR1H
+TMR1
+T1CON
+flag
+flag2
+LED_status
+timer_sec
+tick
+tick2
+nDay
+startup_counter
+dev_id
+cmd_msg
+cmd_len
+nButton
+last_command
+de_stuffing_mask
+command_byte
+aux_command
+output_buffer
+output_checksum
+flash_mfg_id
+flash_stat
+flash_page_data
+flash_page_data2
+move_act_time_out
+actuator_pulse
+last_actuator_pulse
+act_len
+current_act_position
+target_act_position
+act_full_stroke_tick
+act_max_stroke
+act_min_stroke
+act_safety_stroke
+latitude
+longitude
+altitude
+actuator_move_mask
+
+Project Directory:
+    D:\PIC_Project\Solar_code\
+
+Project Files:
+    main.c
+    solar_lib.h
+    C:\Program Files\PICC\devices\18F458.h
+    C:\Program Files\PICC\drivers\stdlib.h
+    C:\Program Files\PICC\drivers\stddef.h
+    C:\Program Files\PICC\drivers\string.h
+    C:\Program Files\PICC\drivers\ctype.h
+
+Units:
+    main.c (main)
+
+Compiler Settings:
+    Processor:      PIC18F458
+    Pointer Size:   16
+    ADC Range:      0-1023
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+    Output file:    Relocatable
+
+Output Files:
+    Errors:      main.err
+    Ext Symbols: main.esym
+    Object:      main.o
+    Symbols:     main.osym

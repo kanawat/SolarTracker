@@ -1,0 +1,95 @@
+CCS PCH C Compiler, Version 4.078, 38112               02-Jun-10 22:49
+
+               Filename: test232.lst
+
+               ROM used: 146 bytes (0%)
+                         Largest free fragment is 32622
+               RAM used: 6 (0%) at main() level
+                         7 (0%) worst case
+               Stack:    1 locations
+
+*
+0000:  GOTO   0048
+.................... #include <18F458.h> 
+.................... //////// Standard Header file for the PIC18F458 device //////////////// 
+.................... #device PIC18F458 
+.................... #list 
+....................  
+.................... #fuses H4,NOWDT,WDT128,NOPROTECT,NOLVP,PUT,NOBROWNOUT 
+.................... #use fixed_io(d_outputs=PIN_D0, PIN_D1, PIN_D2, PIN_D3, PIN_D4, PIN_D5, PIN_D6, PIN_D7) 
+.................... #use delay(clock=40000000) 
+001E:  CLRF   FEA
+0020:  MOVLW  07
+0022:  MOVWF  FE9
+0024:  MOVF   FEF,W
+0026:  BZ    0044
+0028:  MOVLW  0C
+002A:  MOVWF  01
+002C:  CLRF   00
+002E:  DECFSZ 00,F
+0030:  BRA    002E
+0032:  DECFSZ 01,F
+0034:  BRA    002C
+0036:  MOVLW  F7
+0038:  MOVWF  00
+003A:  DECFSZ 00,F
+003C:  BRA    003A
+003E:  BRA    0040
+0040:  DECFSZ FEF,F
+0042:  BRA    0028
+0044:  GOTO   008A (RETURN)
+.................... #use rs232(baud=9600, xmit=PIN_C6, rcv=PIN_C7, BRGH1OK) 
+....................  
+.................... void main() { 
+0048:  CLRF   FF8
+004A:  BCF    FD0.7
+004C:  CLRF   FEA
+004E:  CLRF   FE9
+0050:  MOVLW  40
+0052:  MOVWF  FAF
+0054:  MOVLW  A2
+0056:  MOVWF  FAC
+0058:  MOVLW  90
+005A:  MOVWF  FAB
+005C:  BSF    FC1.0
+005E:  BSF    FC1.1
+0060:  BSF    FC1.2
+0062:  BCF    FC1.3
+0064:  MOVLW  07
+0066:  MOVWF  FB4
+.................... 	while(1) { 
+.................... 		printf("\r\n hello!"); 
+0068:  CLRF   06
+006A:  MOVF   06,W
+006C:  RCALL  0004
+006E:  INCF   06,F
+0070:  MOVWF  00
+0072:  MOVF   00,W
+0074:  BTFSS  F9E.4
+0076:  BRA    0074
+0078:  MOVWF  FAD
+007A:  MOVLW  09
+007C:  SUBWF  06,W
+007E:  BNZ   006A
+.................... 		delay_ms(500); 
+0080:  MOVLW  02
+0082:  MOVWF  06
+0084:  MOVLW  FA
+0086:  MOVWF  07
+0088:  BRA    001E
+008A:  DECFSZ 06,F
+008C:  BRA    0084
+.................... 	} 
+008E:  BRA    0068
+.................... } 
+....................  
+0090:  SLEEP 
+
+Configuration Fuses:
+   Word  1: 2600   H4 NOOSCSEN
+   Word  2: 0E0C   NOBROWNOUT WDT128 NOWDT BORV20 PUT
+   Word  3: 0000  
+   Word  4: 0081   STVREN NODEBUG NOLVP
+   Word  5: C00F   NOPROTECT NOCPD NOCPB
+   Word  6: E00F   NOWRT NOWRTD NOWRTB NOWRTC
+   Word  7: 400F   NOEBTR NOEBTRB

@@ -1,0 +1,20 @@
+**************** COMMAND REFERENCE ***************************
+e22 : block erase
+r#  : read page #
+b#  : write buffer1 -> page#
+c#  : read page # -> buffer1
+f#  : write flash page # (warning, need to run 'o' first)
+g   : print date time
+w   : buffer1 read
+m#  : move west by # tick
+n#  : move east by # tick
+p22 : set 256 byte page size
+z   : print firmware info
+d#  : set date
+t#  : set time
+l#  : move actutator # to its current target position
+h#  : calibrate actuator #
+j   : write eeprom
+y   : read ADC coversion
+k   : kill your self
+

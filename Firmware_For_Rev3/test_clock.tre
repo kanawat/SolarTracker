@@ -1,0 +1,12 @@
+ÀÄtest_clock
+   ÃÄMAIN  0/290  Ram=6
+   ³  ÃÄ??0??
+   ³  ÃÄinit_spi  0/24  Ram=0
+   ³  ÃÄdisplay_LED  0/52  Ram=0
+   ³  ÃÄ@delay_ms1  0/40  Ram=1
+   ³  ÃÄdisplay_LED  0/52  Ram=0
+   ³  ÃÄ@delay_ms1  0/40  Ram=1
+   ³  ÀÄ@delay_ms1  0/40  Ram=1
+   ÃÄtimer1_ovf  0/18  Ram=0
+   ³  ÀÄdisplay_LED  0/52  Ram=0
+   ÀÄrecive_cmd  0/104  Ram=4

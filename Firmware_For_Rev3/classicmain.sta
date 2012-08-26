@@ -1,0 +1,139 @@
+
+ROM used: 16860 (51%)
+          16860 (51%) including unused fragments
+
+          5 Average locations per line
+          14 Average locations per statement
+
+RAM used: 177 (12%) at main() level
+          218 (14%) worst case
+
+Stack used: 9 worst case (out of 31 total available)
+
+Lines Stmts  %   Files
+----- ----- ---  -----
+  493   287  24  classicmain.c
+  703   429  35  classic_solar_lib.h
+  397     0   0  C:\Program Files\PICC\devices\18F458.h
+ 1493   380  31  C:\Program Files\PICC\drivers\stdlib.h
+   28     0   0  C:\Program Files\PICC\drivers\stddef.h
+  409   121  10  C:\Program Files\PICC\drivers\string.h
+   28     0   0  C:\Program Files\PICC\drivers\ctype.h
+----- -----
+ 3551  1217 Total
+
+Page ROM  %  RAM   Vol Diff  Functions:
+---- --- --- ---   --- ----  ----------
+0     50   0   5   129  4.6  strlen
+0     74   0   2             @MUL88
+0     32   0   5             @MUL1616
+0    410   1   9  1815 10.5  atoi
+0    488   1  11  1817 10.4  atol
+0    670   2  16  1882 11.0  atoi32
+0    468   1  23  1084 11.8  itoa
+0     84   0  14             @MUL3232
+0    208   1  14             @DIVS3232
+0     68   0   5             @DIV1616
+0     40   0   1             @delay_ms1
+0     30   0   0             @const389
+0     58   0   1   169  2.7  lcd_send_nibble
+0     40   0   4   162  3.6  lcd_send_cmd
+0    140   0   1   588  4.3  lcd_init
+0     42   0   5   139  4.5  lcd_gotoxy
+0     76   0   1   272  4.1  lcd_putc
+0     32   0   0   386  1.9  init_rs232
+0     90   0   0   272  2.3  flash_read_mfg_id
+0     52   0   0   119  1.7  flash_read_stat
+0     36   0   2   176  4.8  flash_wait_until_ready
+0    126   0   4   404  2.4  flash_read_page
+0     90   0   2   343  5.1  flash_block_erase
+0    100   0   4   406  6.2  flash_buffer1_write
+0     86   0   2   245  1.9  flash_buffer1_read
+0     66   0   0   143  1.3  flash_set_256_page_size
+0     70   0   3   204  1.8  flash_write_buffer1_to_main_memory
+0    142   0   6   630  6.2  flash_write_page
+0     60   0   3   181  1.8  flash_read_main_memory_to_buffer1
+0    858   3   7  1510  5.0  print_date_time
+0     40   0   0             @const460
+0    122   0  13             @DIV3232
+0    202   1  12             @PRINTF_L32U_38400_31766_31767
+0     38   0   0             @const466
+0    200   1  12             @PRINTF_L32U_422
+0     36   0   0             @const469
+0     36   0   0             @const472
+0    180   1   9             @PRINTF_LU_422
+0    150   0   6   332  4.7  print_page_data
+0     66   0   2             @PRINTF_X_38400_31766_31767
+0    112   0   0   483  2.4  solar_load_parameter_from_flash
+0    556   2   4   822  4.8  print_fw_info
+0     52   0   0             @const492
+0    164   0   9             @PRINTF_LU_38400_31766_31767
+0     52   0   0             @const495
+0     54   0   0             @const496
+0     46   0   0             @const497
+0     48   0   0             @const498
+0     48   0   0             @const499
+0   1270   4  21  2132 11.9  solar_get_act_length
+0     52   0   0             @const507
+0    710   2  14  4062 13.9  move_act
+0     44   0   0             @goto11761
+0     44   0   0             @goto11782
+0     44   0   0             @goto11810
+0     44   0   0             @goto11855
+0    220   1   9             @PRINTF_LD_38400_31766_31767
+0    412   1   5   574  5.7  actuator_move_execute
+0    658   2   9  1594  7.2  read_eeprom_data
+0     26   0   0             @MEMSET
+0    578   2  10  1226  7.3  write_eeprom_data
+0    388   1   4   887  8.2  timer1_ovf
+0     24   0   0    52  1.9  init_spi
+0    112   0   4   494  8.0  recive_cmd
+0   2156   6   9  5984 11.4  process_cmd_msg
+0     44   0   0             @const545
+0     40   0   0             @const546
+0     56   0   0             @const547
+0     54   0   0             @const548
+0     46   0   0             @const549
+0     38   0   0             @const551
+0     50   0   0             @const554
+0     44   0   0             @const555
+0     54   0   0             @const556
+0     40   0   3             @DIV88
+0    208   1   6             @PRINTF_D_38400_31766_31767
+0     46   0   0             @const563
+0     44   0   0             @const564
+0     38   0   0             @const565
+0     86   0   0             @goto12340
+0    692   2  14  1416  7.7  log_data
+0     42   0   0             @const572
+0     46   0   0             @const573
+0     36   0   0             @const574
+0     42   0   0             @const575
+0    976   3   9  2537  8.4  MAIN
+0     34   0   0             @const581
+0     40   0   0             @const582
+0     54   0   0             @const583
+0     40   0   0             @const584
+0     34   0   0             @const586
+
+Program metrics:
+    Functions               37
+    Statements              1217
+    Comments                1155
+    Volume (V)              60165
+    Difficilty (D)          211.1
+    Effort to implement (E) 12697832
+    Time to implement (T)   195 hours, 57 minutes
+    Est Delivered Bugs (B)  18
+    Cyclomatic Complexity   161
+    Maintainability (MI)    110
+
+ Segment     Used  Free
+-----------  ----  ----
+00000-00002     4  0  
+00004-00006     0  4  
+00008-000A8   162  0  
+000AA-07FFE  16694  15904  
+
+
+

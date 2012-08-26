@@ -1,0 +1,13 @@
+>>> Warning 203 "L:\solar_code\solar_lib.h" Line 482(1,1): Condition always TRUE
+>>> Warning 203 "test_clock.c" Line 195(1,1): Condition always TRUE
+>>> Warning 203 "test_clock.c" Line 217(1,1): Condition always TRUE
+>>> Warning 203 "test_clock.c" Line 294(1,1): Condition always TRUE
+>>> Warning 202 "L:\solar_code\solar_lib.h" Line 123(7,14): Variable never used:   act_len
+>>> Warning 202 "L:\solar_code\solar_lib.h" Line 133(6,24): Variable never used:   actuator_move_mask
+>>> Warning 202 "L:\solar_code\solar_lib.h" Line 245(8,9): Variable never used:   i
+>>> Warning 202 "test_clock.c" Line 205(6,7): Variable never used:   k
+>>> Warning 202 "test_clock.c" Line 271(7,17): Variable never used:   relay_time
+>>> Warning 202 "test_clock.c" Line 272(6,14): Variable never used:   act_loop
+>>> Warning 202 "test_clock.c" Line 272(15,16): Variable never used:   i
+      Memory usage:   ROM=2%      RAM=11% - 11%
+      0 Errors,  11 Warnings.

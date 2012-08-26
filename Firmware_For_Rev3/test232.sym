@@ -1,0 +1,56 @@
+000     @SCRATCH
+001     @SCRATCH
+001     _RETURN_
+002     @SCRATCH
+003     @SCRATCH
+004     @SCRATCH
+006     main.@SCRATCH1
+007     @delay_ms1.P1
+F83     PSP_DATA
+FB4.6   C1OUT
+FB4.7   C2OUT
+FBB-FBC CCP_2
+FBB     CCP_2_LOW
+FBC     CCP_2_HIGH
+FBE     CCP_1_LOW
+FBE-FBF CCP_1
+FBF     CCP_1_HIGH
+FE9-FEA @WRITE_PROGRAM_MEMORY.P1
+FE9-FEA @READ_PROGRAM_MEMORY.P2
+FF6-FF8 @READ_PROGRAM_MEMORY.P1
+FF6-FF8 @WRITE_PROGRAM_MEMORY.P2
+
+ROM Allocation:
+001E  @delay_ms1
+0048  main
+0004  @const62
+0048  @cinit
+
+Project Directory:
+    I:\solar_code\
+
+Project Files:
+    test232.c
+    C:\PROGRA~1\PICC\devices\18F458.h
+
+Units:
+    test232.c (main)
+
+Compiler Settings:
+    Processor:      PIC18F458
+    Pointer Size:   16
+    ADC Range:      0-255
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+
+Output Files:
+    Errors:      test232.err
+    Ext Symbols: test232.esym
+    INHX32:      test232.hex
+    Symbols:     test232.sym
+    List:        test232.lst
+    Debug/COFF:  test232.cof
+    Project:     test232.PJT
+    Call Tree:   test232.tre
+    Statistics:  test232.sta

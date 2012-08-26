@@ -1,0 +1,11 @@
+>>> Warning 203 "L:\solar_code\classic_solar_lib.h" Line 586(1,1): Condition always TRUE
+>>> Warning 203 "classicmain.c" Line 265(1,1): Condition always TRUE
+>>> Warning 203 "classicmain.c" Line 453(1,1): Condition always TRUE
+>>> Warning 203 "classicmain.c" Line 491(1,1): Condition always TRUE
+>>> Warning 216 "classicmain.c" Line 494(0,1): Interrupts disabled during call to prevent re-entrancy:  (@DIV3232)
+>>> Warning 202 "L:\solar_code\classic_solar_lib.h" Line 135(7,20): Variable never used:   wall_pwr_read
+>>> Warning 202 "L:\solar_code\classic_solar_lib.h" Line 146(7,14): Variable never used:   act_len
+>>> Warning 202 "L:\solar_code\classic_solar_lib.h" Line 336(8,9): Variable never used:   i
+>>> Warning 202 "classicmain.c" Line 387(15,16): Variable never used:   i
+      Memory usage:   ROM=51%      RAM=12% - 14%
+      0 Errors,  9 Warnings.

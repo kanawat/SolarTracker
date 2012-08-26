@@ -1,0 +1,324 @@
+000     @SCRATCH
+001     @SCRATCH
+001     _RETURN_
+002     @SCRATCH
+003     @SCRATCH
+004     @SCRATCH
+005     @INTERRUPT_AREA
+006     @INTERRUPT_AREA
+007     @INTERRUPT_AREA
+008     @INTERRUPT_AREA
+009     @INTERRUPT_AREA
+00A     @INTERRUPT_AREA
+00B     @INTERRUPT_AREA
+00C     @INTERRUPT_AREA
+00D     @INTERRUPT_AREA
+00E     @INTERRUPT_AREA
+00F     @INTERRUPT_AREA
+010     @INTERRUPT_AREA
+011     @INTERRUPT_AREA
+012     @INTERRUPT_AREA
+013     @INTERRUPT_AREA
+014     @INTERRUPT_AREA
+015     @INTERRUPT_AREA
+016     @INTERRUPT_AREA
+017     @INTERRUPT_AREA
+018     @INTERRUPT_AREA
+019-01A strtok.save
+01B-01E _Randseed
+01F     flag
+020     flag2
+021     LED_status
+022-025 timer_sec
+026-029 tick
+02A-02D tick2
+02E-031 nDay
+032-033 startup_counter
+034-035 dev_id
+036-049 cmd_msg
+04A     cmd_len
+04B     nButton
+04C-04F last_command
+050     de_stuffing_mask
+051     command_byte
+052-053 aux_command
+054-073 output_buffer
+074     output_checksum
+075-078 flash_mfg_id
+079     flash_stat
+07A     flash_page_data
+07B     flash_page_data2
+07C-07D move_act_time_out
+07E-07F actuator_pulse
+080-081 last_actuator_pulse
+082-085 act_len
+086-08D current_act_position
+08E-08F target_act_position
+090-097 act_full_stroke_tick
+098-099 act_max_stroke
+09A-09B act_min_stroke
+09C-09D act_safety_stroke
+09E-09F latitude
+0A0-0A1 longitude
+0A2-0A3 altitude
+0A4     actuator_move_mask
+0A5-0A6 MAIN.relay_time
+0A7-0A8 MAIN.kk
+0A9     MAIN.act_loop
+0AA     MAIN.i
+0AB     button_menu.k
+0AB     process_cmd_msg.i
+0AB     read_eeprom_data.i
+0AB     MAIN.@SCRATCH1
+0AC     read_eeprom_data.j
+0AC     process_cmd_msg.j
+0AC     button_menu.target_act
+0AC     MAIN.@SCRATCH2
+0AD-0AE read_eeprom_data.temp_mem
+0AD-0AE process_cmd_msg.temp_mem
+0AD     button_menu.@SCRATCH1
+0AE     button_menu.@SCRATCH2
+0AF     send_buffer1_content.i
+0AF-0B0 flash_write_page.pageAddress
+0AF     write_device_id.i
+0AF     solar_get_act_length.nActuator
+0AF     flash_block_erase.i
+0AF-0B0 read_device_id.temp_mem
+0AF     write_eeprom_data.write_cal
+0AF     actuator_move_execute.nActuator
+0AF-0B0 flash_write_buffer1_to_main_memory.pageAddress
+0AF     flash_buffer1_write.data
+0AF-0B0 flash_read_main_memory_to_buffer1.pageAddress
+0AF     read_eeprom_data.@SCRATCH1
+0AF     process_cmd_msg.@SCRATCH1
+0AF     button_menu.@SCRATCH3
+0B0     flash_block_erase.j
+0B0     flash_buffer1_write.pageIndex
+0B0     write_eeprom_data.i
+0B0     @delay_us1.P1
+0B0     send_buffer1_content.buffer1_content
+0B0-0B1 solar_get_act_length.sun_rise_period
+0B0     actuator_move_execute.@SCRATCH1
+0B0     write_device_id.@SCRATCH1
+0B0     read_eeprom_data.@SCRATCH2
+0B0     process_cmd_msg.@SCRATCH2
+0B0     button_menu.@SCRATCH4
+0B1     read_device_id.i
+0B1     write_eeprom_data.j
+0B1     flash_buffer1_write.nData
+0B1     flash_write_page.i
+0B1     flash_write_buffer1_to_main_memory.@SCRATCH1
+0B1     flash_read_main_memory_to_buffer1.@SCRATCH1
+0B1     send_buffer1_content.@SCRATCH1
+0B1     actuator_move_execute.@SCRATCH2
+0B1     write_device_id.@SCRATCH2
+0B1     read_eeprom_data.@SCRATCH3
+0B1     process_cmd_msg.@SCRATCH3
+0B1     button_menu.@SCRATCH5
+0B2     flash_buffer1_write.i
+0B2     flash_write_page.check_sum
+0B2-0B3 solar_get_act_length.current_period
+0B2-0B3 move_act.nPulse
+0B2     read_device_id.@SCRATCH1
+0B2     write_device_id.@SCRATCH3
+0B2     read_eeprom_data.@SCRATCH4
+0B2     write_eeprom_data.@SCRATCH1
+0B2     process_cmd_msg.@SCRATCH4
+0B2     button_menu.@SCRATCH6
+0B3     flash_write_page.input_data
+0B3     read_device_id.@SCRATCH2
+0B3     write_device_id.@SCRATCH4
+0B3     write_eeprom_data.@SCRATCH2
+0B3     process_cmd_msg.@SCRATCH5
+0B3     button_menu.@SCRATCH7
+0B4-0B5 solar_get_act_length.current_period_fraction
+0B4-0B5 move_act.time_out_sec
+0B4     flash_write_page.@SCRATCH1
+0B4     read_device_id.@SCRATCH3
+0B4     write_device_id.@SCRATCH5
+0B4     write_eeprom_data.@SCRATCH3
+0B4     process_cmd_msg.@SCRATCH6
+0B4     button_menu.@SCRATCH8
+0B5     read_device_id.@SCRATCH4
+0B5     write_device_id.@SCRATCH6
+0B5     write_eeprom_data.@SCRATCH4
+0B5     process_cmd_msg.@SCRATCH7
+0B5     button_menu.@SCRATCH9
+0B6-0B7 solar_get_act_length.current_act_len
+0B6-0B7 move_act.stuck_sec
+0B6     read_device_id.@SCRATCH5
+0B6     write_eeprom_data.@SCRATCH5
+0B6     process_cmd_msg.@SCRATCH8
+0B6     button_menu.@SCRATCH10
+0B7     read_device_id.@SCRATCH6
+0B7     write_eeprom_data.@SCRATCH6
+0B7     process_cmd_msg.@SCRATCH9
+0B8-0B9 solar_get_act_length.next_act_len
+0B8     move_act.direction
+0B8     read_device_id.@SCRATCH7
+0B8     process_cmd_msg.@SCRATCH10
+0B9     @MEMSET.P1
+0B9     move_act.nActuator
+0BA-0BB @MEMSET.P1
+0BA-0BB move_act.xxx
+0BA     solar_get_act_length.@SCRATCH1
+0BB     solar_get_act_length.@SCRATCH2
+0BC-0BD move_act.yyy
+0BC     solar_get_act_length.@SCRATCH3
+0BD-0BE flash_read_page.pageAddress
+0BD     solar_get_act_length.@SCRATCH4
+0BE     solar_get_act_length.@SCRATCH5
+0BE     move_act.@SCRATCH1
+0BF     flash_read_page.pageIndex
+0BF     solar_get_act_length.@SCRATCH6
+0BF     move_act.@SCRATCH2
+0C0     flash_wait_until_ready.wait_loop
+0C0     flash_read_page.@SCRATCH1
+0C0     solar_get_act_length.@SCRATCH7
+0C1     flash_wait_until_ready.@SCRATCH1
+0C1     solar_get_act_length.@SCRATCH8
+0C2     solar_get_act_length.@SCRATCH9
+0C3     solar_get_act_length.@SCRATCH10
+0C4-0C7 @MUL3232.P1
+0C8-0CB @MUL3232.P1
+0CC     @MUL3232.@SCRATCH1
+0CD     @MUL3232.@SCRATCH2
+0CE     @MUL3232.@SCRATCH3
+0CF     @MUL3232.@SCRATCH4
+0D0     @MUL3232.@SCRATCH5
+0D1     @MUL3232.@SCRATCH6
+0D2     recive_cmd.c
+0D2     @delay_ms1.P1
+0D2     button_scan.i
+0D2-0D5 @DIV3232.P1
+0D2     timer1_ovf.@SCRATCH1
+0D3     recive_cmd.i
+0D3     timer1_ovf.@SCRATCH2
+0D4     recive_cmd.checksum
+0D4     timer1_ovf.@SCRATCH3
+0D5-0D6 recive_cmd.msg_addr
+0D5     timer1_ovf.@SCRATCH4
+0D6-0D9 @DIV3232.P1
+0D7     send_data.packet_type
+0D7     recive_cmd.@SCRATCH1
+0D8     send_data.size
+0D8     recive_cmd.@SCRATCH2
+0D9     send_data.i
+0DA     send_data.@SCRATCH1
+0DA     @DIV3232.@SCRATCH1
+0DB     stuff_data.data_to_stuff
+0DB     @DIV3232.@SCRATCH2
+0DC     stuff_data.stuffing_mask
+0DC     @DIV3232.@SCRATCH3
+0DD     stuff_data.@SCRATCH1
+0DD     @DIV3232.@SCRATCH4
+0DE     @DIV3232.@SCRATCH5
+F83     PSP_DATA
+F83     PORTD
+F9D     PIE1
+F9E     PIR1
+FAB     RCSTA
+FAC     TXSTA
+FB4.6   C1OUT
+FB4.7   C2OUT
+FBB     CCP_2_HIGH
+FBB     CCP_2_LOW
+FBB     CCP_2
+FBE     CCP_1_HIGH
+FBE     CCP_1_LOW
+FBE     CCP_1
+FC5     SSPCON2
+FC6     SSPCON1
+FC7     SSPSTAT
+FCD     T1CON
+FCE     TMR1
+FCF     TMR1H
+FE9-FEA @MEMSET.P1
+FE9-FEA @READ_PROGRAM_MEMORY.P2
+FE9-FEA @WRITE_PROGRAM_MEMORY.P3
+FF6-FF8 @WRITE_PROGRAM_MEMORY.P1
+FF6-FF8 @READ_PROGRAM_MEMORY.P2
+
+ROM Allocation:
+1352  @MUL3232
+0178  @delay_ms1
+1A7E  @delay_us1
+0440  @PUTCHARI_BIU_1
+0124  init_rs232
+0606  flash_read_mfg_id
+05AE  flash_read_stat
+05E2  flash_wait_until_ready
+0BA0  flash_read_page
+0C9A  flash_block_erase
+0E66  flash_buffer1_write
+0ECA  flash_set_256_page_size
+0CF0  flash_write_buffer1_to_main_memory
+0F0C  flash_write_page
+0D42  flash_read_main_memory_to_buffer1
+0C2A  solar_load_parameter_from_flash
+0144  display_LED
+0448  stuff_data
+046A  send_data
+0D8A  send_buffer1_content
+1536  solar_get_act_length
+00AA  @DIV3232
+0FAC  move_act
+12A2  @goto11517
+12CE  @goto11538
+12FA  @goto11566
+1326  @goto11611
+13A6  actuator_move_execute
+090A  read_device_id
+0660  @MEMSET
+1A0A  write_device_id
+067A  read_eeprom_data
+0970  write_eeprom_data
+01A0  button_scan
+01E4  timer1_ovf
+0596  init_spi
+04DC  recive_cmd
+1A9E  process_cmd_msg
+225A  button_menu
+2532  @goto12133
+2562  MAIN
+2562  @cinit
+0136  StrtoulGO
+0136  StrtolGO
+1459  DEAD_TRAP
+
+
+User Memory space: 
+
+Project Directory:
+    D:\PIC_Project\Solar_code\
+
+Project Files:
+    main.c
+    solar_lib.h
+    C:\Program Files\PICC\devices\18F458.h
+    C:\Program Files\PICC\drivers\stdlib.h
+    C:\Program Files\PICC\drivers\stddef.h
+    C:\Program Files\PICC\drivers\string.h
+    C:\Program Files\PICC\drivers\ctype.h
+
+Units:
+    main.c (main)
+
+Compiler Settings:
+    Processor:      PIC18F458
+    Pointer Size:   16
+    ADC Range:      0-1023
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+
+Output Files:
+    Errors:      main.err
+    Ext Symbols: main.esym
+    INHX32:      main.hex
+    Symbols:     main.sym
+    List:        main.lst
+    Debug/COFF:  main.cof
+    Project:     main.PJT
+    Call Tree:   main.tre
+    Statistics:  main.sta

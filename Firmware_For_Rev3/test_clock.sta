@@ -1,0 +1,54 @@
+
+ROM used: 694 (2%)
+          694 (2%) including unused fragments
+
+          0 Average locations per line
+          1 Average locations per statement
+
+RAM used: 168 (11%) at main() level
+          172 (11%) worst case
+
+Stack used: 3 worst case (out of 31 total available)
+
+Lines Stmts  %   Files
+----- ----- ---  -----
+  296   241  21  test_clock.c
+  598   382  34  solar_lib.h
+  397     0   0  C:\Program Files\PICC\devices\18F458.h
+ 1493   380  34  C:\Program Files\PICC\drivers\stdlib.h
+   28     0   0  C:\Program Files\PICC\drivers\stddef.h
+  409   121  11  C:\Program Files\PICC\drivers\string.h
+   28     0   0  C:\Program Files\PICC\drivers\ctype.h
+----- -----
+ 3249  1124 Total
+
+Page ROM  %  RAM   Vol Diff  Functions:
+---- --- --- ---   --- ----  ----------
+0     40   3   1             @delay_ms1
+0     52   4   0   176  2.3  display_LED
+0     18   1   0    70  2.3  timer1_ovf
+0     24   2   0    52  1.9  init_spi
+0    104   7   4   461  7.9  recive_cmd
+0    290  21   6   552  3.8  MAIN
+
+Program metrics:
+    Functions               5
+    Statements              1124
+    Comments                964
+    Volume (V)              1812
+    Difficilty (D)          18.5
+    Effort to implement (E) 33557
+    Time to implement (T)   31 minutes
+    Est Delivered Bugs (B)  0
+    Cyclomatic Complexity   7
+    Maintainability (MI)    75
+
+ Segment     Used  Free
+-----------  ----  ----
+00000-00002     4  0  
+00004-00006     0  4  
+00008-000A8   162  0  
+000AA-07FFE   528  32070  
+
+
+

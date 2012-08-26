@@ -1,0 +1,89 @@
+
+ROM used: 10418 (32%)
+          10418 (32%) including unused fragments
+
+          3 Average locations per line
+          8 Average locations per statement
+
+RAM used: 173 (11%) at main() level
+          223 (15%) worst case
+
+Stack used: 9 worst case (out of 31 total available)
+
+Lines Stmts  %   Files
+----- ----- ---  -----
+  622   410  32  main.c
+  709   403  31  solar_lib.h
+  391     0   0  C:\Program Files\PICC\devices\18F458.h
+ 1273   359  28  C:\Program Files\PICC\drivers\stdlib.h
+   28     0   0  C:\Program Files\PICC\drivers\stddef.h
+  409   121   9  C:\Program Files\PICC\drivers\string.h
+   28     0   0  C:\Program Files\PICC\drivers\ctype.h
+----- -----
+ 3460  1293 Total
+
+Page ROM  %  RAM   Vol Diff  Functions:
+---- --- --- ---   --- ----  ----------
+0     84   0  14             @MUL3232
+0     40   0   1             @delay_ms1
+0     32   0   1             @delay_us1
+0      8   0   0             @PUTCHARI_BIU_1
+0     32   0   0   386  1.9  init_rs232
+0     90   0   0   272  2.3  flash_read_mfg_id
+0     52   0   0   119  1.7  flash_read_stat
+0     36   0   2   176  4.8  flash_wait_until_ready
+0    138   1   4   487  4.3  flash_read_page
+0     86   0   2   343  5.1  flash_block_erase
+0    100   0   4   406  6.2  flash_buffer1_write
+0     66   0   0   143  1.3  flash_set_256_page_size
+0     82   0   3   279  3.7  flash_write_buffer1_to_main_memory
+0    160   1   6   716  7.7  flash_write_page
+0     72   0   3   254  3.7  flash_read_main_memory_to_buffer1
+0    112   1   0   483  2.4  solar_load_parameter_from_flash
+0     52   0   0   176  2.3  display_LED
+0     34   0   3   189  4.0  stuff_data
+0    114   1   4   616  6.4  send_data
+0    220   1   3   792  4.8  send_buffer1_content
+0   1236   6  21  2094 12.1  solar_get_act_length
+0    122   1  13             @DIV3232
+0    758   4  14  4196 14.0  move_act
+0     44   0   0             @goto11517
+0     44   0   0             @goto11538
+0     44   0   0             @goto11566
+0     44   0   0             @goto11611
+0    400   2   3   574  5.7  actuator_move_execute
+0    102   0  10   191  4.5  read_device_id
+0     26   0   0             @MEMSET
+0    116   1   7   141  4.8  write_device_id
+0    656   3   8  1594  7.2  read_eeprom_data
+0    560   3   9  1226  7.3  write_eeprom_data
+0     68   0   1   380  4.7  button_scan
+0    604   3   4  2015 11.3  timer1_ovf
+0     24   0   0    52  1.9  init_spi
+0    186   1   7  1159 11.8  recive_cmd
+0   1980  10  14  7055 10.8  process_cmd_msg
+0    728   3  12  2372 11.0  button_menu
+0     48   0   0             @goto12133
+0    852   4   8  2418  9.0  MAIN
+
+Program metrics:
+    Functions               30
+    Statements              1293
+    Comments                1213
+    Volume (V)              50416
+    Difficilty (D)          181.7
+    Effort to implement (E) 9161651
+    Time to implement (T)   141 hours, 23 minutes
+    Est Delivered Bugs (B)  15
+    Cyclomatic Complexity   142
+    Maintainability (MI)    50
+
+ Segment     Used  Free
+-----------  ----  ----
+00000-00002     4  0  
+00004-00006     0  4  
+00008-000A8   162  0  
+000AA-07FFE  10252  22346  
+
+
+
