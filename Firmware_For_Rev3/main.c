@@ -40,7 +40,9 @@ void timer1_ovf()
      {    init_rs232();
        last_command =0;
        cmd_len =0;
+	   output_low(TX_EN);
       }   
+
 
      if ((read_adc()+read_adc()+read_adc()+read_adc())/4<600) {
        if (flag2.is_moving) flag2.abort_current_activity=1;
@@ -211,8 +213,8 @@ void process_cmd_msg() {
      // 0x22 = go home
       case 0x22: {  if (flag2.is_moving) {send_data(1,0); break;}
                send_data(0,0);
-               tick = (int32)act_full_stroke_tick[(int8) aux_command]*(int32)(act_safety_stroke-act_min_stroke);
-               tick = tick/(act_max_stroke-act_min_stroke);
+               tick = (int32)act_full_stroke_tick[(int8) aux_command]*(int32)(act_safety_stroke-act_min_stroke[(int8) aux_command]);
+               tick = tick/(act_max_stroke[(int8) aux_command]-act_min_stroke[(int8) aux_command]);
                target_act_position = (unsigned int16) tick;
                actuator_move_execute((int8) aux_command);
                    last_actuator_pulse = actuator_pulse;
@@ -220,8 +222,8 @@ void process_cmd_msg() {
      // 0x23 = cal act
      case 0x23: {  if (flag2.is_moving) {send_data(1,0); break;}
                send_data(0,0);
-                  move_act(2000,9000,move_act_time_out,1,(int8) aux_command); // move actuator to west
-                  move_act(2000,9000,move_act_time_out,0,(int8) aux_command); // move actuator to home position
+                  move_act(MAX_FULL_STROKE,9000,move_act_time_out,1,(int8) aux_command); // move actuator to west
+                  move_act(MAX_FULL_STROKE,9000,move_act_time_out,0,(int8) aux_command); // move actuator to home position
                   act_full_stroke_tick[(int8) aux_command]= actuator_pulse;
                   current_act_position[(int8) aux_command] =0;
                   write_eeprom_data(1); // save full_stroke_tick and current_position
@@ -229,12 +231,19 @@ void process_cmd_msg() {
                   break; }
      // 0x24 = report actuator stat
      case 0x24: {  
-               memcpy(output_buffer,&act_min_stroke,2);
-               memcpy(output_buffer+2,&act_max_stroke,2);
-               memcpy(output_buffer+4,&act_safety_stroke,2);
-               memcpy(output_buffer+6,act_full_stroke_tick,8);
-               memcpy(output_buffer+14,current_act_position,8);
-               send_data(4,21);
+//               memcpy(output_buffer,&act_min_stroke,2);
+//               memcpy(output_buffer+2,&act_max_stroke,2);
+//               memcpy(output_buffer+4,&act_safety_stroke,2);
+//               memcpy(output_buffer+6,act_full_stroke_tick,8);
+//               memcpy(output_buffer+14,current_act_position,8);
+
+               memcpy(output_buffer,act_min_stroke,8);
+               memcpy(output_buffer+8,act_max_stroke,8);
+               memcpy(output_buffer+16,&act_safety_stroke,2);
+               memcpy(output_buffer+18,act_full_stroke_tick,8);
+               memcpy(output_buffer+26,current_act_position,8);
+
+               send_data(4,33);
                break;
               }   
       // 0x25 = execute move on actuator to target position
@@ -252,6 +261,20 @@ void process_cmd_msg() {
                send_data(5,1);
                 break;
             }   
+
+// new command
+	 case 0x27: { // set min actuator len ( len_in_cm x 256 )
+				act_min_stroke[(int8) (aux_command & 0x0003)]=aux_command&0xFFFC;
+				write_eeprom_data(1);
+				break;
+		}	
+
+	 case 0x28: {
+				act_max_stroke[(int8) (aux_command & 0x0003)]=aux_command&0xFFFC;
+				write_eeprom_data(1);
+				break;
+		}	
+
  
 // level 1 command is for generic status
      case 0x10: { memcpy(output_buffer,&nDay,4);
@@ -283,13 +306,13 @@ void process_cmd_msg() {
                   output_low(TX_EN);
                } else if (aux_command ==0x0001) {
                   output_high(TX_EN);
-                  delay_us(500);
+                  delay_us(900);
                   send_data(0,0); // send ack         
                } else send_data(1,0); // send NACK
                break;
              }   
 
-     case 0x02: {  // close/open communication port
+     case 0x02: {  // enable/disable operation
                 if (aux_command ==0x0000) { 
                   flag2.en_operate=0;
                   send_data(0,0); // send ack         
@@ -515,8 +538,8 @@ void button_menu() {
          case 4: { // move safty
                 while (flag2.button_pressed ==1) button_scan();
                delay_ms(10);
-               tick = (int32)act_full_stroke_tick[target_act]*(int32)(act_safety_stroke-act_min_stroke);
-               tick = tick/(act_max_stroke-act_min_stroke);
+               tick = (int32)act_full_stroke_tick[target_act]*(int32)(act_safety_stroke-act_min_stroke[target_act]);
+               tick = tick/(act_max_stroke[target_act]-act_min_stroke[target_act]);
                target_act_position = (unsigned int16) tick;
                actuator_move_execute(target_act);
                break; }

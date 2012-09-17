@@ -59,13 +59,19 @@ struct port_d_map{
 #define ADDR_CURRENT_STROKE 0xf00010
 #define ADDR_TIME           0xf00020
 #define ADDR_START_COUNTER  0xf00030
-#define MAX_FULL_STROKE 2000
+#define ADDR_ACT_MIN_LEN    0xf00060
+#define ADDR_ACT_MAX_LEN    0xf00070
+
+#define MAX_FULL_STROKE 6000
 #rom ADDR_FULL_STROKE={0x047E,0x037F,0x0280,0x0181} // default value = 0x2D8 = 728 tick
 #rom ADDR_CURRENT_STROKE={0x0000,0x0001,0x0002,0x0003}
 #rom ADDR_TIME={0x0000,0x0000,0x0001,0x0000}
 #rom ADDR_START_COUNTER={0x0000}
 #rom 0xf00040 ={0x1234} // to check if eeprom can be read properly
 #rom 0xf00050 ={0xFFFE} // device ID
+#rom ADDR_ACT_MIN_LEN={0x4C80,0x4C81,0x4C82,0x4C83}
+#rom ADDR_ACT_MAX_LEN={0x7B80,0x7B81,0x7B82,0x7B83}
+
 //////////////////////////////////////
 
 
@@ -114,7 +120,7 @@ unsigned int32 last_command =0;
 int8 de_stuffing_mask = 0x00;
 int8 command_byte=0x00;
 int16 aux_command;
-int8 output_buffer[32];
+int8 output_buffer[36];
 int8 output_checksum;
 /////////////////////////// flash_related_variable
 int8 flash_mfg_id[4];
@@ -129,8 +135,8 @@ float act_len;
 unsigned int16 current_act_position[4]={0,0,0,0};
 unsigned int16 target_act_position=0;
 unsigned int16 act_full_stroke_tick[4]={0,0,0,0};
-unsigned int16 act_max_stroke=0;
-unsigned int16 act_min_stroke=0;
+unsigned int16 act_max_stroke[4]={0,0,0,0};
+unsigned int16 act_min_stroke[4]={0,0,0,0};
 unsigned int16 act_safety_stroke=0;
 unsigned int16 latitude=0;
 unsigned int16 longitude=0;
@@ -359,10 +365,11 @@ void print_page_data(int16 nPage) {
 }
 */
 void solar_load_parameter_from_flash() {
-    flash_read_page(0,0x4E); 
-	act_min_stroke = make16(flash_page_data2,flash_page_data);
-    flash_read_page(0,0x50); 
-	act_max_stroke = make16(flash_page_data2,flash_page_data);
+    // this section is no longer required. min/max strokes are loaded from eeprom
+    //flash_read_page(0,0x4E); 
+	//act_min_stroke[0] = make16(flash_page_data2,flash_page_data);
+    //flash_read_page(0,0x50); 
+	//act_max_stroke[0] = make16(flash_page_data2,flash_page_data);
     flash_read_page(0,0x56); 
 	latitude = make16(flash_page_data2,flash_page_data);
     flash_read_page(0,0x58); 
@@ -513,8 +520,8 @@ void solar_get_act_length(unsigned int8 nActuator) {
 	if ((current_period < sun_rise_period) || (current_period > sun_rise_period+124)) // still dark
 	{
 
-		tick = (int32)act_full_stroke_tick[nActuator]*(int32)(act_safety_stroke-act_min_stroke);
-		tick = tick/(act_max_stroke-act_min_stroke);
+		tick = (int32)act_full_stroke_tick[nActuator]*(int32)(act_safety_stroke-act_min_stroke[nActuator]);
+		tick = tick/(act_max_stroke[nActuator]-act_min_stroke[nActuator]);
 		target_act_position = (unsigned int16) tick;
 	} else {
 		flash_read_page(nDay,(int8)(current_period-sun_rise_period)*2+4);
@@ -533,11 +540,11 @@ void solar_get_act_length(unsigned int8 nActuator) {
         	next_act_len = (unsigned int16) tick;
 			current_act_len = current_act_len - next_act_len;
 		}
-		if (current_act_len >= act_max_stroke) current_act_len = act_max_stroke;
-		if (current_act_len <= act_min_stroke) current_act_len = act_min_stroke;
+		if (current_act_len >= act_max_stroke[nActuator]) current_act_len = act_max_stroke[nActuator];
+		if (current_act_len <= act_min_stroke[nActuator]) current_act_len = act_min_stroke[nActuator];
 
-		tick = (int32)act_full_stroke_tick[nActuator]* (int32)(current_act_len-act_min_stroke);
-		tick = tick/(act_max_stroke-act_min_stroke);
+		tick = (int32)act_full_stroke_tick[nActuator]* (int32)(current_act_len-act_min_stroke[nActuator]);
+		tick = tick/(act_max_stroke[nActuator]-act_min_stroke[nActuator]);
 		target_act_position = (unsigned int16) tick;
 	}
 
@@ -686,6 +693,11 @@ void read_eeprom_data()
    		temp_mem= &current_act_position[j];
 	    for (i=0;i<2;i++) memset(temp_mem+i,read_eeprom((int8)ADDR_CURRENT_STROKE+i+j*2),1);
    		if (current_act_position[j] > act_full_stroke_tick[j]) current_act_position[j] = act_full_stroke_tick[j];
+   		temp_mem= &act_min_stroke[j];
+	    for (i=0;i<2;i++) memset(temp_mem+i,read_eeprom((int8)ADDR_ACT_MIN_LEN+i+j*2),1);
+   		temp_mem= &act_max_stroke[j];
+	    for (i=0;i<2;i++) memset(temp_mem+i,read_eeprom((int8)ADDR_ACT_MAX_LEN+i+j*2),1);
+
    }
 
 
@@ -699,8 +711,12 @@ void write_eeprom_data(int8 write_cal)
 
    for (j=0;j<4;j++) for (i=0;i<2;i++) write_eeprom((int8)ADDR_CURRENT_STROKE+i+j*2,current_act_position[j]>>(i*8));
    for (i=0;i<2;i++) write_eeprom((int8)ADDR_START_COUNTER+i,startup_counter>>(i*8));
-   if (write_cal ==1)
+   if (write_cal ==1) {
       for (j=0;j<4;j++) for (i=0;i<2;i++) write_eeprom((int8)ADDR_FULL_STROKE+i+j*2,act_full_stroke_tick[j]>>(i*8));
+      for (j=0;j<4;j++) for (i=0;i<2;i++) write_eeprom((int8)ADDR_ACT_MIN_LEN+i+j*2,act_min_stroke[j]>>(i*8));
+      for (j=0;j<4;j++) for (i=0;i<2;i++) write_eeprom((int8)ADDR_ACT_MAX_LEN+i+j*2,act_max_stroke[j]>>(i*8));
+   }
+
 }
 
 

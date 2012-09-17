@@ -17,10 +17,12 @@ ADC_OFF::0	C:\Program Files\PICC\Devices\18F458.h	302;"	d	line:302
 ADC_READ_ONLY::6	C:\Program Files\PICC\Devices\18F458.h	345;"	d	line:345
 ADC_START_AND_READ::7	C:\Program Files\PICC\Devices\18F458.h	343;"	d	line:343
 ADC_START_ONLY::1	C:\Program Files\PICC\Devices\18F458.h	344;"	d	line:344
-ADDR_CURRENT_STROKE::0xf00010	D:\PIC_Project\Solar_code\solar_lib.h	59;"	d	line:59
-ADDR_FULL_STROKE::0xf00000	D:\PIC_Project\Solar_code\solar_lib.h	58;"	d	line:58
-ADDR_START_COUNTER::0xf00030	D:\PIC_Project\Solar_code\solar_lib.h	61;"	d	line:61
-ADDR_TIME::0xf00020	D:\PIC_Project\Solar_code\solar_lib.h	60;"	d	line:60
+ADDR_ACT_MAX_LEN::0xf00070	C:\Documents and Settings\Kanawat\My Documents\GitHub\SolarTracker\Firmware_For_Rev3\solar_lib.h	63;"	d	line:63
+ADDR_ACT_MIN_LEN::0xf00060	C:\Documents and Settings\Kanawat\My Documents\GitHub\SolarTracker\Firmware_For_Rev3\solar_lib.h	62;"	d	line:62
+ADDR_CURRENT_STROKE::0xf00010	C:\Documents and Settings\Kanawat\My Documents\GitHub\SolarTracker\Firmware_For_Rev3\solar_lib.h	59;"	d	line:59
+ADDR_FULL_STROKE::0xf00000	C:\Documents and Settings\Kanawat\My Documents\GitHub\SolarTracker\Firmware_For_Rev3\solar_lib.h	58;"	d	line:58
+ADDR_START_COUNTER::0xf00030	C:\Documents and Settings\Kanawat\My Documents\GitHub\SolarTracker\Firmware_For_Rev3\solar_lib.h	61;"	d	line:61
+ADDR_TIME::0xf00020	C:\Documents and Settings\Kanawat\My Documents\GitHub\SolarTracker\Firmware_For_Rev3\solar_lib.h	60;"	d	line:60
 ALL_ANALOG::0	C:\Program Files\PICC\Devices\18F458.h	313;"	d	line:313
 AN0::0x0E	C:\Program Files\PICC\Devices\18F458.h	325;"	d	line:325
 AN0_AN1_AN2_AN3_AN4::2	C:\Program Files\PICC\Devices\18F458.h	315;"	d	line:315
@@ -81,7 +83,7 @@ CCP_SHUTDOWN_ON_COMP::0x300000	C:\Program Files\PICC\Devices\18F458.h	195;"	d	li
 CCP_SHUTDOWN_ON_COMP_INT0::0x700000	C:\Program Files\PICC\Devices\18F458.h	199;"	d	line:199
 CCP_SHUTDOWN_ON_INT0::0x400000	C:\Program Files\PICC\Devices\18F458.h	196;"	d	line:196
 CCP_SHUTDOWN_RESTART::0x80000000	C:\Program Files\PICC\Devices\18F458.h	209;"	d	line:209
-CCW::PIN_B4	D:\PIC_Project\Solar_code\solar_lib.h	48;"	d	line:48
+CCW::PIN_B4	C:\Documents and Settings\Kanawat\My Documents\GitHub\SolarTracker\Firmware_For_Rev3\solar_lib.h	48;"	d	line:48
 CP1_INVERT::0x0000010	C:\Program Files\PICC\Devices\18F458.h	257;"	d	line:257
 CP2_INVERT::0x0000020	C:\Program Files\PICC\Devices\18F458.h	258;"	d	line:258
 D0_VR_D2_VR::0x05ff0e	C:\Program Files\PICC\Devices\18F458.h	256;"	d	line:256
@@ -91,12 +93,12 @@ D1_D0_D3_D2::0x0Fff02	C:\Program Files\PICC\Devices\18F458.h	253;"	d	line:253
 D1_D0_D3_D2_OUT_ON_E1_E2::0x0FF903	C:\Program Files\PICC\Devices\18F458.h	250;"	d	line:250
 D1_D0_NC_NC_OUT_ON_E1::0x03FD01	C:\Program Files\PICC\Devices\18F458.h	254;"	d	line:254
 D1_VR_D3_VR::0x0Aff06	C:\Program Files\PICC\Devices\18F458.h	255;"	d	line:255
-EN0::PIN_B0	D:\PIC_Project\Solar_code\solar_lib.h	44;"	d	line:44
-EN1::PIN_B1	D:\PIC_Project\Solar_code\solar_lib.h	45;"	d	line:45
-EN2::PIN_B2	D:\PIC_Project\Solar_code\solar_lib.h	46;"	d	line:46
-EN3::PIN_B3	D:\PIC_Project\Solar_code\solar_lib.h	47;"	d	line:47
+EN0::PIN_B0	C:\Documents and Settings\Kanawat\My Documents\GitHub\SolarTracker\Firmware_For_Rev3\solar_lib.h	44;"	d	line:44
+EN1::PIN_B1	C:\Documents and Settings\Kanawat\My Documents\GitHub\SolarTracker\Firmware_For_Rev3\solar_lib.h	45;"	d	line:45
+EN2::PIN_B2	C:\Documents and Settings\Kanawat\My Documents\GitHub\SolarTracker\Firmware_For_Rev3\solar_lib.h	46;"	d	line:46
+EN3::PIN_B3	C:\Documents and Settings\Kanawat\My Documents\GitHub\SolarTracker\Firmware_For_Rev3\solar_lib.h	47;"	d	line:47
 FALSE::0	C:\Program Files\PICC\Devices\18F458.h	62;"	d	line:62
-FLASH_CS::PIN_C2	D:\PIC_Project\Solar_code\solar_lib.h	54;"	d	line:54
+FLASH_CS::PIN_C2	C:\Documents and Settings\Kanawat\My Documents\GitHub\SolarTracker\Firmware_For_Rev3\solar_lib.h	54;"	d	line:54
 GLOBAL::0xF2C0	C:\Program Files\PICC\Devices\18F458.h	360;"	d	line:360
 H_TO_L::0	C:\Program Files\PICC\Devices\18F458.h	358;"	d	line:358
 INT_AD::0x9D40	C:\Program Files\PICC\Devices\18F458.h	371;"	d	line:371
@@ -127,9 +129,9 @@ INT_TIMER0::0xF220	C:\Program Files\PICC\Devices\18F458.h	362;"	d	line:362
 INT_TIMER1::0x9D01	C:\Program Files\PICC\Devices\18F458.h	363;"	d	line:363
 INT_TIMER2::0x9D02	C:\Program Files\PICC\Devices\18F458.h	364;"	d	line:364
 INT_TIMER3::0xA002	C:\Program Files\PICC\Devices\18F458.h	365;"	d	line:365
-LED_latch	D:\PIC_Project\Solar_code\solar_lib.h	19;"	m	line:19	struct:port_d_map
-LED_status	D:\PIC_Project\Solar_code\solar_lib.h	100;"	v	line:100
-LED_status	D:\PIC_Project\Solar_code\solar_lib.h	95;"	s	line:95
+LED_latch	C:\Documents and Settings\Kanawat\My Documents\GitHub\SolarTracker\Firmware_For_Rev3\solar_lib.h	19;"	m	line:19	struct:port_d_map
+LED_status	C:\Documents and Settings\Kanawat\My Documents\GitHub\SolarTracker\Firmware_For_Rev3\solar_lib.h	101;"	s	line:101
+LED_status	C:\Documents and Settings\Kanawat\My Documents\GitHub\SolarTracker\Firmware_For_Rev3\solar_lib.h	106;"	v	line:106
 LVD_19::0x11	C:\Program Files\PICC\Devices\18F458.h	289;"	d	line:289
 LVD_21::0x12	C:\Program Files\PICC\Devices\18F458.h	288;"	d	line:288
 LVD_23::0x13	C:\Program Files\PICC\Devices\18F458.h	287;"	d	line:287
@@ -146,13 +148,13 @@ LVD_42::0x1D	C:\Program Files\PICC\Devices\18F458.h	277;"	d	line:277
 LVD_45::0x1E	C:\Program Files\PICC\Devices\18F458.h	276;"	d	line:276
 LVD_LVDIN::0x1F	C:\Program Files\PICC\Devices\18F458.h	275;"	d	line:275
 L_TO_H::0x40	C:\Program Files\PICC\Devices\18F458.h	357;"	d	line:357
-MAX_CMD_LEN::18	D:\PIC_Project\Solar_code\solar_lib.h	41;"	d	line:41
-MAX_FULL_STROKE::2000	D:\PIC_Project\Solar_code\solar_lib.h	62;"	d	line:62
+MAX_CMD_LEN::18	C:\Documents and Settings\Kanawat\My Documents\GitHub\SolarTracker\Firmware_For_Rev3\solar_lib.h	41;"	d	line:41
+MAX_FULL_STROKE::6000	C:\Documents and Settings\Kanawat\My Documents\GitHub\SolarTracker\Firmware_For_Rev3\solar_lib.h	65;"	d	line:65
 MCLR_FROM_RUN::15	C:\Program Files\PICC\Devices\18F458.h	82;"	d	line:82
 MCLR_FROM_SLEEP::11	C:\Program Files\PICC\Devices\18F458.h	81;"	d	line:81
-MUX_en	D:\PIC_Project\Solar_code\solar_lib.h	20;"	m	line:20	struct:port_d_map
+MUX_en	C:\Documents and Settings\Kanawat\My Documents\GitHub\SolarTracker\Firmware_For_Rev3\solar_lib.h	20;"	m	line:20	struct:port_d_map
 NC_NC_NC_NC::0x00ff07	C:\Program Files\PICC\Devices\18F458.h	252;"	d	line:252
-NETWORK_COMM::1	D:\PIC_Project\Solar_code\main.c	1;"	d	line:1	file:
+NETWORK_COMM::1	C:\Documents and Settings\Kanawat\My Documents\GitHub\SolarTracker\Firmware_For_Rev3\main.c	1;"	d	line:1	file:
 NORMAL_POWER_UP::12	C:\Program Files\PICC\Devices\18F458.h	83;"	d	line:83
 NO_ANALOGS::7	C:\Program Files\PICC\Devices\18F458.h	312;"	d	line:312
 NULL::0	C:\Program Files\PICC\Drivers\STDDEF.H	23;"	d	line:23
@@ -192,7 +194,7 @@ PIN_D7::31775	C:\Program Files\PICC\Devices\18F458.h	55;"	d	line:55
 PIN_E0::31776	C:\Program Files\PICC\Devices\18F458.h	57;"	d	line:57
 PIN_E1::31777	C:\Program Files\PICC\Devices\18F458.h	58;"	d	line:58
 PIN_E2::31778	C:\Program Files\PICC\Devices\18F458.h	59;"	d	line:59
-PORTD	D:\PIC_Project\Solar_code\solar_lib.h	22;"	v	line:22
+PORTD	C:\Documents and Settings\Kanawat\My Documents\GitHub\SolarTracker\Firmware_For_Rev3\solar_lib.h	22;"	v	line:22
 PSP_DISABLED::0	C:\Program Files\PICC\Devices\18F458.h	220;"	d	line:220
 PSP_ENABLED::0x10	C:\Program Files\PICC\Devices\18F458.h	219;"	d	line:219
 RA0_ANALOG::0xE	C:\Program Files\PICC\Devices\18F458.h	338;"	d	line:338
@@ -216,11 +218,11 @@ RTCC_EXT_H_TO_L::48	C:\Program Files\PICC\Devices\18F458.h	94;"	d	line:94
 RTCC_EXT_L_TO_H::32	C:\Program Files\PICC\Devices\18F458.h	93;"	d	line:93
 RTCC_INTERNAL::0	C:\Program Files\PICC\Devices\18F458.h	92;"	d	line:92
 RTCC_OFF::0x80	C:\Program Files\PICC\Devices\18F458.h	106;"	d	line:106
-SEC_IN_4_YEARS::126230400	D:\PIC_Project\Solar_code\solar_lib.h	40;"	d	line:40
-SENSE_0::PIN_A2	D:\PIC_Project\Solar_code\solar_lib.h	49;"	d	line:49
-SENSE_1::PIN_A3	D:\PIC_Project\Solar_code\solar_lib.h	50;"	d	line:50
-SENSE_2::PIN_A4	D:\PIC_Project\Solar_code\solar_lib.h	51;"	d	line:51
-SENSE_3::PIN_A5	D:\PIC_Project\Solar_code\solar_lib.h	52;"	d	line:52
+SEC_IN_4_YEARS::126230400	C:\Documents and Settings\Kanawat\My Documents\GitHub\SolarTracker\Firmware_For_Rev3\solar_lib.h	40;"	d	line:40
+SENSE_0::PIN_A2	C:\Documents and Settings\Kanawat\My Documents\GitHub\SolarTracker\Firmware_For_Rev3\solar_lib.h	49;"	d	line:49
+SENSE_1::PIN_A3	C:\Documents and Settings\Kanawat\My Documents\GitHub\SolarTracker\Firmware_For_Rev3\solar_lib.h	50;"	d	line:50
+SENSE_2::PIN_A4	C:\Documents and Settings\Kanawat\My Documents\GitHub\SolarTracker\Firmware_For_Rev3\solar_lib.h	51;"	d	line:51
+SENSE_3::PIN_A5	C:\Documents and Settings\Kanawat\My Documents\GitHub\SolarTracker\Firmware_For_Rev3\solar_lib.h	52;"	d	line:52
 SPI_CLK_DIV_16::1	C:\Program Files\PICC\Devices\18F458.h	232;"	d	line:232
 SPI_CLK_DIV_4::0	C:\Program Files\PICC\Devices\18F458.h	231;"	d	line:231
 SPI_CLK_DIV_64::2	C:\Program Files\PICC\Devices\18F458.h	233;"	d	line:233
@@ -253,25 +255,25 @@ T3_DIV_BY_8::0x30	C:\Program Files\PICC\Devices\18F458.h	159;"	d	line:159
 T3_EXTERNAL::0x87	C:\Program Files\PICC\Devices\18F458.h	153;"	d	line:153
 T3_EXTERNAL_SYNC::0x83	C:\Program Files\PICC\Devices\18F458.h	154;"	d	line:154
 T3_INTERNAL::0x85	C:\Program Files\PICC\Devices\18F458.h	152;"	d	line:152
-TMR1	D:\PIC_Project\Solar_code\main.c	29;"	l	line:29
-TMR1H	D:\PIC_Project\Solar_code\main.c	31;"	l	line:31
+TMR1	C:\Documents and Settings\Kanawat\My Documents\GitHub\SolarTracker\Firmware_For_Rev3\main.c	29;"	l	line:29
+TMR1H	C:\Documents and Settings\Kanawat\My Documents\GitHub\SolarTracker\Firmware_For_Rev3\main.c	31;"	l	line:31
 TRUE::1	C:\Program Files\PICC\Devices\18F458.h	63;"	d	line:63
-TX_DLY_TIME::1	D:\PIC_Project\Solar_code\solar_lib.h	42;"	d	line:42
-TX_EN::PIN_E1	D:\PIC_Project\Solar_code\solar_lib.h	55;"	d	line:55
+TX_DLY_TIME::1	C:\Documents and Settings\Kanawat\My Documents\GitHub\SolarTracker\Firmware_For_Rev3\solar_lib.h	42;"	d	line:42
+TX_EN::PIN_E1	C:\Documents and Settings\Kanawat\My Documents\GitHub\SolarTracker\Firmware_For_Rev3\solar_lib.h	55;"	d	line:55
 UART_ADDRESS::2	C:\Program Files\PICC\Devices\18F458.h	244;"	d	line:244
 UART_DATA::4	C:\Program Files\PICC\Devices\18F458.h	245;"	d	line:245
-UTC::7	D:\PIC_Project\Solar_code\solar_lib.h	39;"	d	line:39
+UTC::7	C:\Documents and Settings\Kanawat\My Documents\GitHub\SolarTracker\Firmware_For_Rev3\solar_lib.h	39;"	d	line:39
 VREF_COMP::0x10	C:\Program Files\PICC\Devices\18F458.h	270;"	d	line:270
 VREF_F5::0x40	C:\Program Files\PICC\Devices\18F458.h	269;"	d	line:269
 VREF_HIGH::0x80	C:\Program Files\PICC\Devices\18F458.h	267;"	d	line:267
 VREF_LOW::0xa0	C:\Program Files\PICC\Devices\18F458.h	266;"	d	line:266
-WALL_PWR::PIN_A0	D:\PIC_Project\Solar_code\solar_lib.h	53;"	d	line:53
+WALL_PWR::PIN_A0	C:\Documents and Settings\Kanawat\My Documents\GitHub\SolarTracker\Firmware_For_Rev3\solar_lib.h	53;"	d	line:53
 WDT_FROM_SLEEP::3	C:\Program Files\PICC\Devices\18F458.h	85;"	d	line:85
 WDT_OFF::0	C:\Program Files\PICC\Devices\18F458.h	120;"	d	line:120
 WDT_ON::0x100	C:\Program Files\PICC\Devices\18F458.h	119;"	d	line:119
 WDT_TIMEOUT::7	C:\Program Files\PICC\Devices\18F458.h	80;"	d	line:80
-Y2010_JDN::2455197.5	D:\PIC_Project\Solar_code\solar_lib.h	38;"	d	line:38
-Y2010_UNIX_TIME::1262304000	D:\PIC_Project\Solar_code\solar_lib.h	37;"	d	line:37
+Y2010_JDN::2455197.5	C:\Documents and Settings\Kanawat\My Documents\GitHub\SolarTracker\Firmware_For_Rev3\solar_lib.h	38;"	d	line:38
+Y2010_UNIX_TIME::1262304000	C:\Documents and Settings\Kanawat\My Documents\GitHub\SolarTracker\Firmware_For_Rev3\solar_lib.h	37;"	d	line:37
 _CTYPE	C:\Program Files\PICC\Drivers\CTYPE.H	12;"	d	line:12
 _Cmpfun	C:\Program Files\PICC\Drivers\stdlib.h	1206;"	t	line:1206
 _Cmpfun	C:\Program Files\PICC\Drivers\stdlib.h	1208;"	t	line:1208
@@ -279,18 +281,18 @@ _Randseed	C:\Program Files\PICC\Drivers\stdlib.h	1188;"	v	line:1188
 _STDDEF	C:\Program Files\PICC\Drivers\STDDEF.H	13;"	d	line:13
 _STDLIB	C:\Program Files\PICC\Drivers\stdlib.h	12;"	d	line:12
 _STRING	C:\Program Files\PICC\Drivers\STRING.H	12;"	d	line:12
-abort_current_activity	D:\PIC_Project\Solar_code\solar_lib.h	87;"	m	line:87	struct:flag2
-act_full_stroke_tick	D:\PIC_Project\Solar_code\solar_lib.h	131;"	v	line:131
-act_len	D:\PIC_Project\Solar_code\solar_lib.h	128;"	v	line:128
-act_loop	D:\PIC_Project\Solar_code\main.c	539;"	l	line:539
-act_max_stroke	D:\PIC_Project\Solar_code\solar_lib.h	132;"	v	line:132
-act_min_stroke	D:\PIC_Project\Solar_code\solar_lib.h	133;"	v	line:133
-act_safety_stroke	D:\PIC_Project\Solar_code\solar_lib.h	134;"	v	line:134
-actuator_move_execute	D:\PIC_Project\Solar_code\solar_lib.h	641;"	f	line:641	signature:(nActuator)
-actuator_move_mask	D:\PIC_Project\Solar_code\solar_lib.h	138;"	v	line:138
-actuator_pulse	D:\PIC_Project\Solar_code\solar_lib.h	126;"	v	line:126
-allow_manual_move_act	D:\PIC_Project\Solar_code\solar_lib.h	88;"	m	line:88	struct:flag2
-altitude	D:\PIC_Project\Solar_code\solar_lib.h	137;"	v	line:137
+abort_current_activity	C:\Documents and Settings\Kanawat\My Documents\GitHub\SolarTracker\Firmware_For_Rev3\solar_lib.h	93;"	m	line:93	struct:flag2
+act_full_stroke_tick	C:\Documents and Settings\Kanawat\My Documents\GitHub\SolarTracker\Firmware_For_Rev3\solar_lib.h	137;"	v	line:137
+act_len	C:\Documents and Settings\Kanawat\My Documents\GitHub\SolarTracker\Firmware_For_Rev3\solar_lib.h	134;"	v	line:134
+act_loop	C:\Documents and Settings\Kanawat\My Documents\GitHub\SolarTracker\Firmware_For_Rev3\main.c	562;"	l	line:562
+act_max_stroke	C:\Documents and Settings\Kanawat\My Documents\GitHub\SolarTracker\Firmware_For_Rev3\solar_lib.h	138;"	v	line:138
+act_min_stroke	C:\Documents and Settings\Kanawat\My Documents\GitHub\SolarTracker\Firmware_For_Rev3\solar_lib.h	139;"	v	line:139
+act_safety_stroke	C:\Documents and Settings\Kanawat\My Documents\GitHub\SolarTracker\Firmware_For_Rev3\solar_lib.h	140;"	v	line:140
+actuator_move_execute	C:\Documents and Settings\Kanawat\My Documents\GitHub\SolarTracker\Firmware_For_Rev3\solar_lib.h	648;"	f	line:648	signature:(nActuator)
+actuator_move_mask	C:\Documents and Settings\Kanawat\My Documents\GitHub\SolarTracker\Firmware_For_Rev3\solar_lib.h	144;"	v	line:144
+actuator_pulse	C:\Documents and Settings\Kanawat\My Documents\GitHub\SolarTracker\Firmware_For_Rev3\solar_lib.h	132;"	v	line:132
+allow_manual_move_act	C:\Documents and Settings\Kanawat\My Documents\GitHub\SolarTracker\Firmware_For_Rev3\solar_lib.h	94;"	m	line:94	struct:flag2
+altitude	C:\Documents and Settings\Kanawat\My Documents\GitHub\SolarTracker\Firmware_For_Rev3\solar_lib.h	143;"	v	line:143
 atoe	C:\Program Files\PICC\Drivers\stdlib.h	149;"	p	line:149	signature:(char * s)
 atoe	C:\Program Files\PICC\Drivers\stdlib.h	153;"	p	line:153	signature:(char * s)
 atoe	C:\Program Files\PICC\Drivers\stdlib.h	292;"	f	line:292	signature:(char * s)
@@ -309,8 +311,8 @@ atoi64	C:\Program Files\PICC\Drivers\stdlib.h	704;"	f	line:704	signature:(char *
 atoi64	C:\Program Files\PICC\Drivers\stdlib.h	73;"	p	line:73	signature:(char *s)
 atol	C:\Program Files\PICC\Drivers\stdlib.h	498;"	f	line:498	signature:(char *s)
 atol	C:\Program Files\PICC\Drivers\stdlib.h	85;"	p	line:85	signature:(char *s)
-aux	D:\PIC_Project\Solar_code\solar_lib.h	98;"	m	line:98	struct:LED_status
-aux_command	D:\PIC_Project\Solar_code\solar_lib.h	116;"	v	line:116
+aux	C:\Documents and Settings\Kanawat\My Documents\GitHub\SolarTracker\Firmware_For_Rev3\solar_lib.h	104;"	m	line:104	struct:LED_status
+aux_command	C:\Documents and Settings\Kanawat\My Documents\GitHub\SolarTracker\Firmware_For_Rev3\solar_lib.h	122;"	v	line:122
 base	C:\Program Files\PICC\Drivers\stdlib.h	432;"	l	line:432
 base	C:\Program Files\PICC\Drivers\stdlib.h	501;"	l	line:501
 base	C:\Program Files\PICC\Drivers\stdlib.h	574;"	l	line:574
@@ -318,11 +320,12 @@ base	C:\Program Files\PICC\Drivers\stdlib.h	642;"	l	line:642
 base	C:\Program Files\PICC\Drivers\stdlib.h	707;"	l	line:707
 beg	C:\Program Files\PICC\Drivers\STRING.H	322;"	l	line:322
 bsearch	C:\Program Files\PICC\Drivers\stdlib.h	1241;"	f	line:1241	signature:(char *key, char *base, size_t num, size_t width,_Cmpfun cmp)
-buffer1_content	D:\PIC_Project\Solar_code\solar_lib.h	459;"	l	line:459
-button_menu	D:\PIC_Project\Solar_code\main.c	467;"	f	line:467
-button_pressed	D:\PIC_Project\Solar_code\solar_lib.h	86;"	m	line:86	struct:flag2
-button_scan	D:\PIC_Project\Solar_code\main.c	4;"	f	line:4
-button_scan	D:\PIC_Project\Solar_code\solar_lib.h	140;"	p	line:140	signature:()
+buffer1_content	C:\Documents and Settings\Kanawat\My Documents\GitHub\SolarTracker\Firmware_For_Rev3\solar_lib.h	466;"	l	line:466
+button_menu	C:\Documents and Settings\Kanawat\My Documents\GitHub\SolarTracker\Firmware_For_Rev3\main.c	490;"	f	line:490
+button_pressed	C:\Documents and Settings\Kanawat\My Documents\GitHub\SolarTracker\Firmware_For_Rev3\solar_lib.h	92;"	m	line:92	struct:flag2
+button_scan	C:\Documents and Settings\Kanawat\My Documents\GitHub\SolarTracker\Firmware_For_Rev3\main.c	4;"	f	line:4
+button_scan	C:\Documents and Settings\Kanawat\My Documents\GitHub\SolarTracker\Firmware_For_Rev3\solar_lib.h	146;"	p	line:146	signature:()
+c	C:\Documents and Settings\Kanawat\My Documents\GitHub\SolarTracker\Firmware_For_Rev3\main.c	100;"	l	line:100
 c	C:\Program Files\PICC\Drivers\stdlib.h	298;"	l	line:298
 c	C:\Program Files\PICC\Drivers\stdlib.h	367;"	l	line:367
 c	C:\Program Files\PICC\Drivers\stdlib.h	433;"	l	line:433
@@ -334,31 +337,30 @@ c	C:\Program Files\PICC\Drivers\stdlib.h	774;"	l	line:774
 c	C:\Program Files\PICC\Drivers\stdlib.h	812;"	l	line:812
 c	C:\Program Files\PICC\Drivers\stdlib.h	885;"	l	line:885
 c	C:\Program Files\PICC\Drivers\stdlib.h	957;"	l	line:957
-c	D:\PIC_Project\Solar_code\main.c	98;"	l	line:98
-check_sum	D:\PIC_Project\Solar_code\solar_lib.h	294;"	l	line:294
-checksum	D:\PIC_Project\Solar_code\main.c	100;"	l	line:100
-cmd_len	D:\PIC_Project\Solar_code\solar_lib.h	111;"	v	line:111
-cmd_msg	D:\PIC_Project\Solar_code\solar_lib.h	110;"	v	line:110
-cmd_posted	D:\PIC_Project\Solar_code\solar_lib.h	77;"	m	line:77	struct:flag
+check_sum	C:\Documents and Settings\Kanawat\My Documents\GitHub\SolarTracker\Firmware_For_Rev3\solar_lib.h	300;"	l	line:300
+checksum	C:\Documents and Settings\Kanawat\My Documents\GitHub\SolarTracker\Firmware_For_Rev3\main.c	102;"	l	line:102
+cmd_len	C:\Documents and Settings\Kanawat\My Documents\GitHub\SolarTracker\Firmware_For_Rev3\solar_lib.h	117;"	v	line:117
+cmd_msg	C:\Documents and Settings\Kanawat\My Documents\GitHub\SolarTracker\Firmware_For_Rev3\solar_lib.h	116;"	v	line:116
+cmd_posted	C:\Documents and Settings\Kanawat\My Documents\GitHub\SolarTracker\Firmware_For_Rev3\solar_lib.h	83;"	m	line:83	struct:flag
 cnt	C:\Program Files\PICC\Drivers\stdlib.h	773;"	l	line:773
-command_byte	D:\PIC_Project\Solar_code\solar_lib.h	115;"	v	line:115
-current_act_len	D:\PIC_Project\Solar_code\solar_lib.h	499;"	l	line:499
-current_act_position	D:\PIC_Project\Solar_code\solar_lib.h	129;"	v	line:129
-current_period	D:\PIC_Project\Solar_code\solar_lib.h	496;"	l	line:496
-current_period_fraction	D:\PIC_Project\Solar_code\solar_lib.h	497;"	l	line:497
-current_pulse_state	D:\PIC_Project\Solar_code\solar_lib.h	89;"	m	line:89	struct:flag2
-data_bus	D:\PIC_Project\Solar_code\solar_lib.h	17;"	m	line:17	struct:port_d_map
-de_stuffing_mask	D:\PIC_Project\Solar_code\solar_lib.h	114;"	v	line:114
-dev_id	D:\PIC_Project\Solar_code\solar_lib.h	109;"	v	line:109
+command_byte	C:\Documents and Settings\Kanawat\My Documents\GitHub\SolarTracker\Firmware_For_Rev3\solar_lib.h	121;"	v	line:121
+current_act_len	C:\Documents and Settings\Kanawat\My Documents\GitHub\SolarTracker\Firmware_For_Rev3\solar_lib.h	506;"	l	line:506
+current_act_position	C:\Documents and Settings\Kanawat\My Documents\GitHub\SolarTracker\Firmware_For_Rev3\solar_lib.h	135;"	v	line:135
+current_period	C:\Documents and Settings\Kanawat\My Documents\GitHub\SolarTracker\Firmware_For_Rev3\solar_lib.h	503;"	l	line:503
+current_period_fraction	C:\Documents and Settings\Kanawat\My Documents\GitHub\SolarTracker\Firmware_For_Rev3\solar_lib.h	504;"	l	line:504
+current_pulse_state	C:\Documents and Settings\Kanawat\My Documents\GitHub\SolarTracker\Firmware_For_Rev3\solar_lib.h	95;"	m	line:95	struct:flag2
+data_bus	C:\Documents and Settings\Kanawat\My Documents\GitHub\SolarTracker\Firmware_For_Rev3\solar_lib.h	17;"	m	line:17	struct:port_d_map
+de_stuffing_mask	C:\Documents and Settings\Kanawat\My Documents\GitHub\SolarTracker\Firmware_For_Rev3\solar_lib.h	120;"	v	line:120
+dev_id	C:\Documents and Settings\Kanawat\My Documents\GitHub\SolarTracker\Firmware_For_Rev3\solar_lib.h	115;"	v	line:115
 digits	C:\Program Files\PICC\Drivers\stdlib.h	1030;"	l	line:1030
 digits	C:\Program Files\PICC\Drivers\stdlib.h	1092;"	l	line:1092
-disp_en	D:\PIC_Project\Solar_code\solar_lib.h	21;"	m	line:21	struct:port_d_map
-display_LED	D:\PIC_Project\Solar_code\solar_lib.h	401;"	f	line:401	signature:()
+disp_en	C:\Documents and Settings\Kanawat\My Documents\GitHub\SolarTracker\Firmware_For_Rev3\solar_lib.h	21;"	m	line:21	struct:port_d_map
+display_LED	C:\Documents and Settings\Kanawat\My Documents\GitHub\SolarTracker\Firmware_For_Rev3\solar_lib.h	408;"	f	line:408	signature:()
 div	C:\Program Files\PICC\Drivers\stdlib.h	251;"	p	line:251	signature:(signed int numer, signed int denom)
 div	C:\Program Files\PICC\Drivers\stdlib.h	274;"	f	line:274	signature:(signed int numer, signed int denom)
 div_t	C:\Program Files\PICC\Drivers\stdlib.h	33;"	t	line:33
 done	C:\Program Files\PICC\Drivers\stdlib.h	1215;"	l	line:1215
-en_operate	D:\PIC_Project\Solar_code\solar_lib.h	85;"	m	line:85	struct:flag2
+en_operate	C:\Documents and Settings\Kanawat\My Documents\GitHub\SolarTracker\Firmware_For_Rev3\solar_lib.h	91;"	m	line:91	struct:flag2
 end	C:\Program Files\PICC\Drivers\STRING.H	322;"	l	line:322
 exp	C:\Program Files\PICC\Drivers\stdlib.h	301;"	l	line:301
 exp	C:\Program Files\PICC\Drivers\stdlib.h	370;"	l	line:370
@@ -368,56 +370,56 @@ expsign	C:\Program Files\PICC\Drivers\stdlib.h	297;"	l	line:297
 expsign	C:\Program Files\PICC\Drivers\stdlib.h	366;"	l	line:366
 fgetc::getch	C:\Program Files\PICC\Devices\18F458.h	69;"	d	line:69
 fgets::gets	C:\Program Files\PICC\Devices\18F458.h	73;"	d	line:73
-flag	D:\PIC_Project\Solar_code\solar_lib.h	73;"	s	line:73
-flag	D:\PIC_Project\Solar_code\solar_lib.h	82;"	v	line:82
-flag2	D:\PIC_Project\Solar_code\solar_lib.h	84;"	s	line:84
-flag2	D:\PIC_Project\Solar_code\solar_lib.h	93;"	v	line:93
-flash_block_erase	D:\PIC_Project\Solar_code\solar_lib.h	214;"	f	line:214	signature:()
-flash_buffer1_read	D:\PIC_Project\Solar_code\solar_lib.h	253;"	f	line:253	signature:(int8 PageIndex)
-flash_buffer1_write	D:\PIC_Project\Solar_code\solar_lib.h	233;"	f	line:233	signature:(int8 data, int8 PageIndex, int8 nData)
-flash_mfg_id	D:\PIC_Project\Solar_code\solar_lib.h	120;"	v	line:120
-flash_page_data	D:\PIC_Project\Solar_code\solar_lib.h	122;"	v	line:122
-flash_page_data2	D:\PIC_Project\Solar_code\solar_lib.h	123;"	v	line:123
-flash_read_main_memory_to_buffer1	D:\PIC_Project\Solar_code\solar_lib.h	321;"	f	line:321	signature:(int16 pageAddress)
-flash_read_mfg_id	D:\PIC_Project\Solar_code\solar_lib.h	163;"	f	line:163	signature:()
-flash_read_page	D:\PIC_Project\Solar_code\solar_lib.h	193;"	f	line:193	signature:(int16 pageAddress, int8 pageIndex)
-flash_read_stat	D:\PIC_Project\Solar_code\solar_lib.h	175;"	f	line:175	signature:()
-flash_set_256_page_size	D:\PIC_Project\Solar_code\solar_lib.h	268;"	f	line:268	signature:()
-flash_stat	D:\PIC_Project\Solar_code\solar_lib.h	121;"	v	line:121
-flash_wait_until_ready	D:\PIC_Project\Solar_code\solar_lib.h	184;"	f	line:184	signature:()
-flash_write_buffer1_to_main_memory	D:\PIC_Project\Solar_code\solar_lib.h	279;"	f	line:279	signature:(int16 pageAddress)
-flash_write_page	D:\PIC_Project\Solar_code\solar_lib.h	293;"	f	line:293	signature:(int16 pageAddress)
+flag	C:\Documents and Settings\Kanawat\My Documents\GitHub\SolarTracker\Firmware_For_Rev3\solar_lib.h	79;"	s	line:79
+flag	C:\Documents and Settings\Kanawat\My Documents\GitHub\SolarTracker\Firmware_For_Rev3\solar_lib.h	88;"	v	line:88
+flag2	C:\Documents and Settings\Kanawat\My Documents\GitHub\SolarTracker\Firmware_For_Rev3\solar_lib.h	90;"	s	line:90
+flag2	C:\Documents and Settings\Kanawat\My Documents\GitHub\SolarTracker\Firmware_For_Rev3\solar_lib.h	99;"	v	line:99
+flash_block_erase	C:\Documents and Settings\Kanawat\My Documents\GitHub\SolarTracker\Firmware_For_Rev3\solar_lib.h	220;"	f	line:220	signature:()
+flash_buffer1_read	C:\Documents and Settings\Kanawat\My Documents\GitHub\SolarTracker\Firmware_For_Rev3\solar_lib.h	259;"	f	line:259	signature:(int8 PageIndex)
+flash_buffer1_write	C:\Documents and Settings\Kanawat\My Documents\GitHub\SolarTracker\Firmware_For_Rev3\solar_lib.h	239;"	f	line:239	signature:(int8 data, int8 PageIndex, int8 nData)
+flash_mfg_id	C:\Documents and Settings\Kanawat\My Documents\GitHub\SolarTracker\Firmware_For_Rev3\solar_lib.h	126;"	v	line:126
+flash_page_data	C:\Documents and Settings\Kanawat\My Documents\GitHub\SolarTracker\Firmware_For_Rev3\solar_lib.h	128;"	v	line:128
+flash_page_data2	C:\Documents and Settings\Kanawat\My Documents\GitHub\SolarTracker\Firmware_For_Rev3\solar_lib.h	129;"	v	line:129
+flash_read_main_memory_to_buffer1	C:\Documents and Settings\Kanawat\My Documents\GitHub\SolarTracker\Firmware_For_Rev3\solar_lib.h	327;"	f	line:327	signature:(int16 pageAddress)
+flash_read_mfg_id	C:\Documents and Settings\Kanawat\My Documents\GitHub\SolarTracker\Firmware_For_Rev3\solar_lib.h	169;"	f	line:169	signature:()
+flash_read_page	C:\Documents and Settings\Kanawat\My Documents\GitHub\SolarTracker\Firmware_For_Rev3\solar_lib.h	199;"	f	line:199	signature:(int16 pageAddress, int8 pageIndex)
+flash_read_stat	C:\Documents and Settings\Kanawat\My Documents\GitHub\SolarTracker\Firmware_For_Rev3\solar_lib.h	181;"	f	line:181	signature:()
+flash_set_256_page_size	C:\Documents and Settings\Kanawat\My Documents\GitHub\SolarTracker\Firmware_For_Rev3\solar_lib.h	274;"	f	line:274	signature:()
+flash_stat	C:\Documents and Settings\Kanawat\My Documents\GitHub\SolarTracker\Firmware_For_Rev3\solar_lib.h	127;"	v	line:127
+flash_wait_until_ready	C:\Documents and Settings\Kanawat\My Documents\GitHub\SolarTracker\Firmware_For_Rev3\solar_lib.h	190;"	f	line:190	signature:()
+flash_write_buffer1_to_main_memory	C:\Documents and Settings\Kanawat\My Documents\GitHub\SolarTracker\Firmware_For_Rev3\solar_lib.h	285;"	f	line:285	signature:(int16 pageAddress)
+flash_write_page	C:\Documents and Settings\Kanawat\My Documents\GitHub\SolarTracker\Firmware_For_Rev3\solar_lib.h	299;"	f	line:299	signature:(int16 pageAddress)
 fputc::putchar	C:\Program Files\PICC\Devices\18F458.h	72;"	d	line:72
 fputs::puts	C:\Program Files\PICC\Devices\18F458.h	74;"	d	line:74
 getc::getch	C:\Program Files\PICC\Devices\18F458.h	68;"	d	line:68
 getchar::getch	C:\Program Files\PICC\Devices\18F458.h	70;"	d	line:70
+i	C:\Documents and Settings\Kanawat\My Documents\GitHub\SolarTracker\Firmware_For_Rev3\main.c	101;"	l	line:101
+i	C:\Documents and Settings\Kanawat\My Documents\GitHub\SolarTracker\Firmware_For_Rev3\main.c	138;"	l	line:138
+i	C:\Documents and Settings\Kanawat\My Documents\GitHub\SolarTracker\Firmware_For_Rev3\main.c	562;"	l	line:562
+i	C:\Documents and Settings\Kanawat\My Documents\GitHub\SolarTracker\Firmware_For_Rev3\main.c	5;"	l	line:5
+i	C:\Documents and Settings\Kanawat\My Documents\GitHub\SolarTracker\Firmware_For_Rev3\solar_lib.h	221;"	l	line:221
+i	C:\Documents and Settings\Kanawat\My Documents\GitHub\SolarTracker\Firmware_For_Rev3\solar_lib.h	240;"	l	line:240
+i	C:\Documents and Settings\Kanawat\My Documents\GitHub\SolarTracker\Firmware_For_Rev3\solar_lib.h	260;"	l	line:260
+i	C:\Documents and Settings\Kanawat\My Documents\GitHub\SolarTracker\Firmware_For_Rev3\solar_lib.h	300;"	l	line:300
+i	C:\Documents and Settings\Kanawat\My Documents\GitHub\SolarTracker\Firmware_For_Rev3\solar_lib.h	442;"	l	line:442
+i	C:\Documents and Settings\Kanawat\My Documents\GitHub\SolarTracker\Firmware_For_Rev3\solar_lib.h	465;"	l	line:465
+i	C:\Documents and Settings\Kanawat\My Documents\GitHub\SolarTracker\Firmware_For_Rev3\solar_lib.h	664;"	l	line:664
+i	C:\Documents and Settings\Kanawat\My Documents\GitHub\SolarTracker\Firmware_For_Rev3\solar_lib.h	670;"	l	line:670
+i	C:\Documents and Settings\Kanawat\My Documents\GitHub\SolarTracker\Firmware_For_Rev3\solar_lib.h	676;"	l	line:676
+i	C:\Documents and Settings\Kanawat\My Documents\GitHub\SolarTracker\Firmware_For_Rev3\solar_lib.h	708;"	l	line:708
 i	C:\Program Files\PICC\Drivers\stdlib.h	1214;"	l	line:1214
 i	C:\Program Files\PICC\Drivers\stdlib.h	300;"	l	line:300
 i	C:\Program Files\PICC\Drivers\stdlib.h	369;"	l	line:369
 i	C:\Program Files\PICC\Drivers\stdlib.h	773;"	l	line:773
-i	D:\PIC_Project\Solar_code\main.c	136;"	l	line:136
-i	D:\PIC_Project\Solar_code\main.c	539;"	l	line:539
-i	D:\PIC_Project\Solar_code\main.c	5;"	l	line:5
-i	D:\PIC_Project\Solar_code\main.c	99;"	l	line:99
-i	D:\PIC_Project\Solar_code\solar_lib.h	215;"	l	line:215
-i	D:\PIC_Project\Solar_code\solar_lib.h	234;"	l	line:234
-i	D:\PIC_Project\Solar_code\solar_lib.h	254;"	l	line:254
-i	D:\PIC_Project\Solar_code\solar_lib.h	294;"	l	line:294
-i	D:\PIC_Project\Solar_code\solar_lib.h	435;"	l	line:435
-i	D:\PIC_Project\Solar_code\solar_lib.h	458;"	l	line:458
-i	D:\PIC_Project\Solar_code\solar_lib.h	657;"	l	line:657
-i	D:\PIC_Project\Solar_code\solar_lib.h	663;"	l	line:663
-i	D:\PIC_Project\Solar_code\solar_lib.h	669;"	l	line:669
-i	D:\PIC_Project\Solar_code\solar_lib.h	696;"	l	line:696
 index	C:\Program Files\PICC\Drivers\stdlib.h	432;"	l	line:432
 index	C:\Program Files\PICC\Drivers\stdlib.h	501;"	l	line:501
 index	C:\Program Files\PICC\Drivers\stdlib.h	574;"	l	line:574
 index	C:\Program Files\PICC\Drivers\stdlib.h	642;"	l	line:642
 index	C:\Program Files\PICC\Drivers\stdlib.h	707;"	l	line:707
-init_rs232	D:\PIC_Project\Solar_code\solar_lib.h	146;"	f	line:146	signature:()
-init_spi	D:\PIC_Project\Solar_code\main.c	90;"	f	line:90
-input_data	D:\PIC_Project\Solar_code\solar_lib.h	295;"	l	line:295
-is_moving	D:\PIC_Project\Solar_code\solar_lib.h	91;"	m	line:91	struct:flag2
+init_rs232	C:\Documents and Settings\Kanawat\My Documents\GitHub\SolarTracker\Firmware_For_Rev3\solar_lib.h	152;"	f	line:152	signature:()
+init_spi	C:\Documents and Settings\Kanawat\My Documents\GitHub\SolarTracker\Firmware_For_Rev3\main.c	92;"	f	line:92
+input_data	C:\Documents and Settings\Kanawat\My Documents\GitHub\SolarTracker\Firmware_For_Rev3\solar_lib.h	301;"	l	line:301
+is_moving	C:\Documents and Settings\Kanawat\My Documents\GitHub\SolarTracker\Firmware_For_Rev3\solar_lib.h	97;"	m	line:97	struct:flag2
 isalnum::(x)isamong(x,"0123456789ABCDEF	C:\Program Files\PICC\Drivers\CTYPE.H	16;"	d	line:16
 isalpha::(x)isamong(x,"ABCDEFGHIJKLMNOP	C:\Program Files\PICC\Drivers\CTYPE.H	17;"	d	line:17
 iscntrl::(x)((x)<'')	C:\Program Files\PICC\Drivers\CTYPE.H	21;"	d	line:21
@@ -431,56 +433,56 @@ isupper::(x)isamong(x,"ABCDEFGHIJKLMNOP	C:\Program Files\PICC\Drivers\CTYPE.H	15
 isxdigit::(x)isamong(x,"0123456789ABCDEF	C:\Program Files\PICC\Drivers\CTYPE.H	20;"	d	line:20
 itoa	C:\Program Files\PICC\Drivers\stdlib.h	770;"	f	line:770	signature:(signed int32 num, unsigned int base, char * s)
 itoa	C:\Program Files\PICC\Drivers\stdlib.h	79;"	p	line:79	signature:(signed int32 num, unsigned int base, char * s)
+j	C:\Documents and Settings\Kanawat\My Documents\GitHub\SolarTracker\Firmware_For_Rev3\main.c	138;"	l	line:138
+j	C:\Documents and Settings\Kanawat\My Documents\GitHub\SolarTracker\Firmware_For_Rev3\solar_lib.h	221;"	l	line:221
+j	C:\Documents and Settings\Kanawat\My Documents\GitHub\SolarTracker\Firmware_For_Rev3\solar_lib.h	676;"	l	line:676
+j	C:\Documents and Settings\Kanawat\My Documents\GitHub\SolarTracker\Firmware_For_Rev3\solar_lib.h	708;"	l	line:708
 j	C:\Program Files\PICC\Drivers\stdlib.h	1214;"	l	line:1214
-j	D:\PIC_Project\Solar_code\main.c	136;"	l	line:136
-j	D:\PIC_Project\Solar_code\solar_lib.h	215;"	l	line:215
-j	D:\PIC_Project\Solar_code\solar_lib.h	669;"	l	line:669
-j	D:\PIC_Project\Solar_code\solar_lib.h	696;"	l	line:696
-k	D:\PIC_Project\Solar_code\main.c	468;"	l	line:468
-kk	D:\PIC_Project\Solar_code\main.c	538;"	l	line:538
+k	C:\Documents and Settings\Kanawat\My Documents\GitHub\SolarTracker\Firmware_For_Rev3\main.c	491;"	l	line:491
+kk	C:\Documents and Settings\Kanawat\My Documents\GitHub\SolarTracker\Firmware_For_Rev3\main.c	561;"	l	line:561
 l	C:\Program Files\PICC\Drivers\stdlib.h	1214;"	l	line:1214
 labs::abs	C:\Program Files\PICC\Drivers\stdlib.h	249;"	d	line:249
-last_actuator_pulse	D:\PIC_Project\Solar_code\solar_lib.h	127;"	v	line:127
-last_command	D:\PIC_Project\Solar_code\solar_lib.h	113;"	v	line:113
-latitude	D:\PIC_Project\Solar_code\solar_lib.h	135;"	v	line:135
+last_actuator_pulse	C:\Documents and Settings\Kanawat\My Documents\GitHub\SolarTracker\Firmware_For_Rev3\solar_lib.h	133;"	v	line:133
+last_command	C:\Documents and Settings\Kanawat\My Documents\GitHub\SolarTracker\Firmware_For_Rev3\solar_lib.h	119;"	v	line:119
+latitude	C:\Documents and Settings\Kanawat\My Documents\GitHub\SolarTracker\Firmware_For_Rev3\solar_lib.h	141;"	v	line:141
 ldiv	C:\Program Files\PICC\Drivers\stdlib.h	252;"	p	line:252	signature:(signed long numer, signed long denom)
 ldiv	C:\Program Files\PICC\Drivers\stdlib.h	282;"	f	line:282	signature:(signed long numer, signed long denom)
 ldiv_t	C:\Program Files\PICC\Drivers\stdlib.h	38;"	t	line:38
-longitude	D:\PIC_Project\Solar_code\solar_lib.h	136;"	v	line:136
+longitude	C:\Documents and Settings\Kanawat\My Documents\GitHub\SolarTracker\Firmware_For_Rev3\solar_lib.h	142;"	v	line:142
 m	C:\Program Files\PICC\Drivers\stdlib.h	1214;"	l	line:1214
-main	D:\PIC_Project\Solar_code\main.c	537;"	f	line:537
-make8	D:\PIC_Project\Solar_code\solar_lib.h	202;"	p	line:202	signature:(pageAddress,1)
-make8	D:\PIC_Project\Solar_code\solar_lib.h	203;"	p	line:203	signature:(pageAddress,0)
-make8	D:\PIC_Project\Solar_code\solar_lib.h	287;"	p	line:287	signature:(pageAddress,1)
-make8	D:\PIC_Project\Solar_code\solar_lib.h	288;"	p	line:288	signature:(pageAddress,0)
-make8	D:\PIC_Project\Solar_code\solar_lib.h	305;"	p	line:305	signature:(pageAddress,1)
-make8	D:\PIC_Project\Solar_code\solar_lib.h	306;"	p	line:306	signature:(pageAddress,0)
-make8	D:\PIC_Project\Solar_code\solar_lib.h	326;"	p	line:326	signature:(pageAddress,1)
-make8	D:\PIC_Project\Solar_code\solar_lib.h	327;"	p	line:327	signature:(pageAddress,0)
-make8	D:\PIC_Project\Solar_code\solar_lib.h	438;"	p	line:438	signature:(dev_id,1)
-make8	D:\PIC_Project\Solar_code\solar_lib.h	440;"	p	line:440	signature:(dev_id,0)
-make8	D:\PIC_Project\Solar_code\solar_lib.h	462;"	p	line:462	signature:(dev_id,1)
-make8	D:\PIC_Project\Solar_code\solar_lib.h	464;"	p	line:464	signature:(dev_id,0)
+main	C:\Documents and Settings\Kanawat\My Documents\GitHub\SolarTracker\Firmware_For_Rev3\main.c	560;"	f	line:560
+make8	C:\Documents and Settings\Kanawat\My Documents\GitHub\SolarTracker\Firmware_For_Rev3\solar_lib.h	208;"	p	line:208	signature:(pageAddress,1)
+make8	C:\Documents and Settings\Kanawat\My Documents\GitHub\SolarTracker\Firmware_For_Rev3\solar_lib.h	209;"	p	line:209	signature:(pageAddress,0)
+make8	C:\Documents and Settings\Kanawat\My Documents\GitHub\SolarTracker\Firmware_For_Rev3\solar_lib.h	293;"	p	line:293	signature:(pageAddress,1)
+make8	C:\Documents and Settings\Kanawat\My Documents\GitHub\SolarTracker\Firmware_For_Rev3\solar_lib.h	294;"	p	line:294	signature:(pageAddress,0)
+make8	C:\Documents and Settings\Kanawat\My Documents\GitHub\SolarTracker\Firmware_For_Rev3\solar_lib.h	311;"	p	line:311	signature:(pageAddress,1)
+make8	C:\Documents and Settings\Kanawat\My Documents\GitHub\SolarTracker\Firmware_For_Rev3\solar_lib.h	312;"	p	line:312	signature:(pageAddress,0)
+make8	C:\Documents and Settings\Kanawat\My Documents\GitHub\SolarTracker\Firmware_For_Rev3\solar_lib.h	332;"	p	line:332	signature:(pageAddress,1)
+make8	C:\Documents and Settings\Kanawat\My Documents\GitHub\SolarTracker\Firmware_For_Rev3\solar_lib.h	333;"	p	line:333	signature:(pageAddress,0)
+make8	C:\Documents and Settings\Kanawat\My Documents\GitHub\SolarTracker\Firmware_For_Rev3\solar_lib.h	445;"	p	line:445	signature:(dev_id,1)
+make8	C:\Documents and Settings\Kanawat\My Documents\GitHub\SolarTracker\Firmware_For_Rev3\solar_lib.h	447;"	p	line:447	signature:(dev_id,0)
+make8	C:\Documents and Settings\Kanawat\My Documents\GitHub\SolarTracker\Firmware_For_Rev3\solar_lib.h	469;"	p	line:469	signature:(dev_id,1)
+make8	C:\Documents and Settings\Kanawat\My Documents\GitHub\SolarTracker\Firmware_For_Rev3\solar_lib.h	471;"	p	line:471	signature:(dev_id,0)
 mblen	C:\Program Files\PICC\Drivers\stdlib.h	1155;"	f	line:1155	signature:(char *s,size_t n)
 mbstowcs	C:\Program Files\PICC\Drivers\stdlib.h	1172;"	f	line:1172	signature:(wchar_t *pwcs,char *s,size_t n)
 mbtowc	C:\Program Files\PICC\Drivers\stdlib.h	1160;"	f	line:1160	signature:(wchar_t *pwc,char *s,size_t n)
-measured_current	D:\PIC_Project\Solar_code\solar_lib.h	81;"	m	line:81	struct:flag
+measured_current	C:\Documents and Settings\Kanawat\My Documents\GitHub\SolarTracker\Firmware_For_Rev3\solar_lib.h	87;"	m	line:87	struct:flag
 memchr	C:\Program Files\PICC\Drivers\STRING.H	191;"	f	line:191	signature:(void *s,unsigned int8 c,size_t n)
 memcmp	C:\Program Files\PICC\Drivers\STRING.H	120;"	f	line:120	signature:(void * s1,char *s2,size_t n)
 memmove	C:\Program Files\PICC\Drivers\STRING.H	34;"	f	line:34	signature:(void *s1,char *s2,size_t n)
-move_act	D:\PIC_Project\Solar_code\solar_lib.h	547;"	f	line:547	signature:(int16 nPulse,int16 time_out_sec,int16 stuck_sec,int8 direction,unsigned int8 nActuator)
-move_act_time_out	D:\PIC_Project\Solar_code\solar_lib.h	125;"	v	line:125
-msg_addr	D:\PIC_Project\Solar_code\main.c	101;"	l	line:101
+move_act	C:\Documents and Settings\Kanawat\My Documents\GitHub\SolarTracker\Firmware_For_Rev3\solar_lib.h	554;"	f	line:554	signature:(int16 nPulse,int16 time_out_sec,int16 stuck_sec,int8 direction,unsigned int8 nActuator)
+move_act_time_out	C:\Documents and Settings\Kanawat\My Documents\GitHub\SolarTracker\Firmware_For_Rev3\solar_lib.h	131;"	v	line:131
+msg_addr	C:\Documents and Settings\Kanawat\My Documents\GitHub\SolarTracker\Firmware_For_Rev3\main.c	103;"	l	line:103
 mult_with10	C:\Program Files\PICC\Drivers\stdlib.h	565;"	f	line:565	signature:(int32 num)
 n	C:\Program Files\PICC\Drivers\stdlib.h	1244;"	l	line:1244
 n1	C:\Program Files\PICC\Drivers\STRING.H	172;"	l	line:172
-nButton	D:\PIC_Project\Solar_code\solar_lib.h	112;"	v	line:112
-nDay	D:\PIC_Project\Solar_code\solar_lib.h	106;"	v	line:106
-next_act_len	D:\PIC_Project\Solar_code\solar_lib.h	500;"	l	line:500
+nButton	C:\Documents and Settings\Kanawat\My Documents\GitHub\SolarTracker\Firmware_For_Rev3\solar_lib.h	118;"	v	line:118
+nDay	C:\Documents and Settings\Kanawat\My Documents\GitHub\SolarTracker\Firmware_For_Rev3\solar_lib.h	112;"	v	line:112
+next_act_len	C:\Documents and Settings\Kanawat\My Documents\GitHub\SolarTracker\Firmware_For_Rev3\solar_lib.h	507;"	l	line:507
 offsetof::(s,f)(offsetofbit(s,f)/8)	C:\Program Files\PICC\Drivers\STDDEF.H	25;"	d	line:25
-operation	D:\PIC_Project\Solar_code\solar_lib.h	97;"	m	line:97	struct:LED_status
-output_buffer	D:\PIC_Project\Solar_code\solar_lib.h	117;"	v	line:117
-output_checksum	D:\PIC_Project\Solar_code\solar_lib.h	118;"	v	line:118
+operation	C:\Documents and Settings\Kanawat\My Documents\GitHub\SolarTracker\Firmware_For_Rev3\solar_lib.h	103;"	m	line:103	struct:LED_status
+output_buffer	C:\Documents and Settings\Kanawat\My Documents\GitHub\SolarTracker\Firmware_For_Rev3\solar_lib.h	123;"	v	line:123
+output_checksum	C:\Documents and Settings\Kanawat\My Documents\GitHub\SolarTracker\Firmware_For_Rev3\solar_lib.h	124;"	v	line:124
 p	C:\Program Files\PICC\Drivers\STRING.H	249;"	l	line:249
 p	C:\Program Files\PICC\Drivers\STRING.H	396;"	l	line:396
 p	C:\Program Files\PICC\Drivers\stdlib.h	1243;"	l	line:1243
@@ -488,17 +490,17 @@ pivot	C:\Program Files\PICC\Drivers\stdlib.h	1245;"	l	line:1245
 point	C:\Program Files\PICC\Drivers\stdlib.h	811;"	l	line:811
 point	C:\Program Files\PICC\Drivers\stdlib.h	884;"	l	line:884
 point	C:\Program Files\PICC\Drivers\stdlib.h	956;"	l	line:956
-port_d_map	D:\PIC_Project\Solar_code\solar_lib.h	16;"	s	line:16
+port_d_map	C:\Documents and Settings\Kanawat\My Documents\GitHub\SolarTracker\Firmware_For_Rev3\solar_lib.h	16;"	s	line:16
 pow10	C:\Program Files\PICC\Drivers\stdlib.h	294;"	l	line:294
 pow10	C:\Program Files\PICC\Drivers\stdlib.h	363;"	l	line:363
 pow10	C:\Program Files\PICC\Drivers\stdlib.h	809;"	l	line:809
 pow10	C:\Program Files\PICC\Drivers\stdlib.h	882;"	l	line:882
 pow10	C:\Program Files\PICC\Drivers\stdlib.h	954;"	l	line:954
-power	D:\PIC_Project\Solar_code\solar_lib.h	90;"	m	line:90	struct:flag2
-power	D:\PIC_Project\Solar_code\solar_lib.h	96;"	m	line:96	struct:LED_status
-prev_pulse_state	D:\PIC_Project\Solar_code\solar_lib.h	76;"	m	line:76	struct:flag
-process_cmd_msg	D:\PIC_Project\Solar_code\main.c	135;"	f	line:135
-process_cmd_msg	D:\PIC_Project\Solar_code\solar_lib.h	143;"	p	line:143	signature:()
+power	C:\Documents and Settings\Kanawat\My Documents\GitHub\SolarTracker\Firmware_For_Rev3\solar_lib.h	102;"	m	line:102	struct:LED_status
+power	C:\Documents and Settings\Kanawat\My Documents\GitHub\SolarTracker\Firmware_For_Rev3\solar_lib.h	96;"	m	line:96	struct:flag2
+prev_pulse_state	C:\Documents and Settings\Kanawat\My Documents\GitHub\SolarTracker\Firmware_For_Rev3\solar_lib.h	82;"	m	line:82	struct:flag
+process_cmd_msg	C:\Documents and Settings\Kanawat\My Documents\GitHub\SolarTracker\Firmware_For_Rev3\main.c	137;"	f	line:137
+process_cmd_msg	C:\Documents and Settings\Kanawat\My Documents\GitHub\SolarTracker\Firmware_For_Rev3\solar_lib.h	149;"	p	line:149	signature:()
 ptr	C:\Program Files\PICC\Drivers\stdlib.h	299;"	l	line:299
 ptr	C:\Program Files\PICC\Drivers\stdlib.h	368;"	l	line:368
 ptr	C:\Program Files\PICC\Drivers\stdlib.h	813;"	l	line:813
@@ -507,20 +509,20 @@ ptr	C:\Program Files\PICC\Drivers\stdlib.h	958;"	l	line:958
 ptrdiff_t::unsignedint16	C:\Program Files\PICC\Drivers\STDDEF.H	18;"	d	line:18
 ptrdiff_t::unsignedint8	C:\Program Files\PICC\Drivers\STDDEF.H	16;"	d	line:16
 putc::putchar	C:\Program Files\PICC\Devices\18F458.h	71;"	d	line:71
-pwr_state	D:\PIC_Project\Solar_code\solar_lib.h	80;"	m	line:80	struct:flag
+pwr_state	C:\Documents and Settings\Kanawat\My Documents\GitHub\SolarTracker\Firmware_For_Rev3\solar_lib.h	86;"	m	line:86	struct:flag
 q	C:\Program Files\PICC\Drivers\stdlib.h	1243;"	l	line:1243
 qsort	C:\Program Files\PICC\Drivers\stdlib.h	1213;"	f	line:1213	signature:(char * qdata, unsigned int qitems, unsigned int qsize, _Cmpfun cmp)
 quot	C:\Program Files\PICC\Drivers\stdlib.h	31;"	m	line:31
 quot	C:\Program Files\PICC\Drivers\stdlib.h	36;"	m	line:36
 rand	C:\Program Files\PICC\Drivers\stdlib.h	1190;"	f	line:1190	signature:(void)
 rand	C:\Program Files\PICC\Drivers\stdlib.h	169;"	p	line:169	signature:(void)
-read_device_id	D:\PIC_Project\Solar_code\solar_lib.h	655;"	f	line:655	signature:()
-read_eeprom_data	D:\PIC_Project\Solar_code\solar_lib.h	667;"	f	line:667	signature:()
-recive_cmd	D:\PIC_Project\Solar_code\main.c	96;"	f	line:96
-relay_time	D:\PIC_Project\Solar_code\main.c	538;"	l	line:538
+read_device_id	C:\Documents and Settings\Kanawat\My Documents\GitHub\SolarTracker\Firmware_For_Rev3\solar_lib.h	662;"	f	line:662	signature:()
+read_eeprom_data	C:\Documents and Settings\Kanawat\My Documents\GitHub\SolarTracker\Firmware_For_Rev3\solar_lib.h	674;"	f	line:674	signature:()
+recive_cmd	C:\Documents and Settings\Kanawat\My Documents\GitHub\SolarTracker\Firmware_For_Rev3\main.c	98;"	f	line:98
+relay_time	C:\Documents and Settings\Kanawat\My Documents\GitHub\SolarTracker\Firmware_For_Rev3\main.c	561;"	l	line:561
 rem	C:\Program Files\PICC\Drivers\stdlib.h	32;"	m	line:32
 rem	C:\Program Files\PICC\Drivers\stdlib.h	37;"	m	line:37
-reset_rs232	D:\PIC_Project\Solar_code\solar_lib.h	79;"	m	line:79	struct:flag
+reset_rs232	C:\Documents and Settings\Kanawat\My Documents\GitHub\SolarTracker\Firmware_For_Rev3\solar_lib.h	85;"	m	line:85	struct:flag
 result	C:\Program Files\PICC\Drivers\stdlib.h	295;"	l	line:295
 result	C:\Program Files\PICC\Drivers\stdlib.h	364;"	l	line:364
 result	C:\Program Files\PICC\Drivers\stdlib.h	431;"	l	line:431
@@ -531,7 +533,7 @@ result	C:\Program Files\PICC\Drivers\stdlib.h	706;"	l	line:706
 result	C:\Program Files\PICC\Drivers\stdlib.h	810;"	l	line:810
 result	C:\Program Files\PICC\Drivers\stdlib.h	883;"	l	line:883
 result	C:\Program Files\PICC\Drivers\stdlib.h	955;"	l	line:955
-rs	D:\PIC_Project\Solar_code\solar_lib.h	18;"	m	line:18	struct:port_d_map
+rs	C:\Documents and Settings\Kanawat\My Documents\GitHub\SolarTracker\Firmware_For_Rev3\solar_lib.h	18;"	m	line:18	struct:port_d_map
 s	C:\Program Files\PICC\Drivers\STRING.H	171;"	l	line:171
 s	C:\Program Files\PICC\Drivers\STRING.H	283;"	l	line:283
 s	C:\Program Files\PICC\Drivers\STRING.H	351;"	l	line:351
@@ -554,10 +556,10 @@ sc2	C:\Program Files\PICC\Drivers\STRING.H	264;"	l	line:264
 sc2	C:\Program Files\PICC\Drivers\STRING.H	37;"	l	line:37
 sd	C:\Program Files\PICC\Drivers\stdlib.h	1027;"	l	line:1027
 sd	C:\Program Files\PICC\Drivers\stdlib.h	1089;"	l	line:1089
-send_buffer1_content	D:\PIC_Project\Solar_code\solar_lib.h	456;"	f	line:456	signature:()
-send_data	D:\PIC_Project\Solar_code\solar_lib.h	142;"	p	line:142	signature:(int8 packet_type,int8 size)
-send_data	D:\PIC_Project\Solar_code\solar_lib.h	434;"	f	line:434	signature:(int8 packet_type,int8 size)
-setup_required	D:\PIC_Project\Solar_code\solar_lib.h	78;"	m	line:78	struct:flag
+send_buffer1_content	C:\Documents and Settings\Kanawat\My Documents\GitHub\SolarTracker\Firmware_For_Rev3\solar_lib.h	463;"	f	line:463	signature:()
+send_data	C:\Documents and Settings\Kanawat\My Documents\GitHub\SolarTracker\Firmware_For_Rev3\solar_lib.h	148;"	p	line:148	signature:(int8 packet_type,int8 size)
+send_data	C:\Documents and Settings\Kanawat\My Documents\GitHub\SolarTracker\Firmware_For_Rev3\solar_lib.h	441;"	f	line:441	signature:(int8 packet_type,int8 size)
+setup_required	C:\Documents and Settings\Kanawat\My Documents\GitHub\SolarTracker\Firmware_For_Rev3\solar_lib.h	84;"	m	line:84	struct:flag
 sign	C:\Program Files\PICC\Drivers\stdlib.h	1029;"	l	line:1029
 sign	C:\Program Files\PICC\Drivers\stdlib.h	1091;"	l	line:1091
 sign	C:\Program Files\PICC\Drivers\stdlib.h	296;"	l	line:296
@@ -575,11 +577,11 @@ size_t::unsignedint8	C:\Program Files\PICC\Drivers\STDDEF.H	21;"	d	line:21
 skip	C:\Program Files\PICC\Drivers\stdlib.h	811;"	l	line:811
 skip	C:\Program Files\PICC\Drivers\stdlib.h	884;"	l	line:884
 skip	C:\Program Files\PICC\Drivers\stdlib.h	956;"	l	line:956
-solar_get_act_length	D:\PIC_Project\Solar_code\solar_lib.h	494;"	f	line:494	signature:(unsigned int8 nActuator)
-solar_load_parameter_from_flash	D:\PIC_Project\Solar_code\solar_lib.h	361;"	f	line:361	signature:()
+solar_get_act_length	C:\Documents and Settings\Kanawat\My Documents\GitHub\SolarTracker\Firmware_For_Rev3\solar_lib.h	501;"	f	line:501	signature:(unsigned int8 nActuator)
+solar_load_parameter_from_flash	C:\Documents and Settings\Kanawat\My Documents\GitHub\SolarTracker\Firmware_For_Rev3\solar_lib.h	367;"	f	line:367	signature:()
 srand	C:\Program Files\PICC\Drivers\stdlib.h	1196;"	f	line:1196	signature:(unsigned int32 seed)
 srand	C:\Program Files\PICC\Drivers\stdlib.h	191;"	p	line:191	signature:(unsigned int32 seed)
-startup_counter	D:\PIC_Project\Solar_code\solar_lib.h	107;"	v	line:107
+startup_counter	C:\Documents and Settings\Kanawat\My Documents\GitHub\SolarTracker\Firmware_For_Rev3\solar_lib.h	113;"	v	line:113
 strcat	C:\Program Files\PICC\Drivers\STRING.H	78;"	f	line:78	signature:(char *s1, char *s2)
 strchr	C:\Program Files\PICC\Drivers\STRING.H	205;"	f	line:205	signature:(char *s, unsigned int8 c)
 strcmp	C:\Program Files\PICC\Drivers\STRING.H	134;"	f	line:134	signature:(char *s1, char *s2)
@@ -611,44 +613,44 @@ strtol	C:\Program Files\PICC\Drivers\stdlib.h	93;"	p	line:93	signature:(char *s,
 strtoul	C:\Program Files\PICC\Drivers\stdlib.h	101;"	p	line:101	signature:(char *s,char *endptr, signed int base)
 strtoul	C:\Program Files\PICC\Drivers\stdlib.h	1025;"	f	line:1025	signature:(char *s, char *endptr, signed int base)
 strxfrm	C:\Program Files\PICC\Drivers\STRING.H	169;"	f	line:169	signature:(char *s1, char *s2, size_t n)
-stuff_data	D:\PIC_Project\Solar_code\solar_lib.h	141;"	p	line:141	signature:(int8 data_to_stuff)
-stuff_data	D:\PIC_Project\Solar_code\solar_lib.h	412;"	f	line:412	signature:(int8 data_to_stuff)
-stuffing_mask	D:\PIC_Project\Solar_code\solar_lib.h	413;"	l	line:413
+stuff_data	C:\Documents and Settings\Kanawat\My Documents\GitHub\SolarTracker\Firmware_For_Rev3\solar_lib.h	147;"	p	line:147	signature:(int8 data_to_stuff)
+stuff_data	C:\Documents and Settings\Kanawat\My Documents\GitHub\SolarTracker\Firmware_For_Rev3\solar_lib.h	419;"	f	line:419	signature:(int8 data_to_stuff)
+stuffing_mask	C:\Documents and Settings\Kanawat\My Documents\GitHub\SolarTracker\Firmware_For_Rev3\solar_lib.h	420;"	l	line:420
 su	C:\Program Files\PICC\Drivers\STRING.H	194;"	l	line:194
 su1	C:\Program Files\PICC\Drivers\STRING.H	122;"	l	line:122
 su2	C:\Program Files\PICC\Drivers\STRING.H	122;"	l	line:122
-sun_rise_period	D:\PIC_Project\Solar_code\solar_lib.h	495;"	l	line:495
+sun_rise_period	C:\Documents and Settings\Kanawat\My Documents\GitHub\SolarTracker\Firmware_For_Rev3\solar_lib.h	502;"	l	line:502
 system	C:\Program Files\PICC\Drivers\stdlib.h	1150;"	f	line:1150	signature:(char *string)
 system	C:\Program Files\PICC\Drivers\stdlib.h	205;"	p	line:205	signature:(char *string)
 t	C:\Program Files\PICC\Drivers\STRING.H	283;"	l	line:283
 t	C:\Program Files\PICC\Drivers\stdlib.h	1216;"	l	line:1216
-target_act	D:\PIC_Project\Solar_code\main.c	469;"	l	line:469
-target_act_position	D:\PIC_Project\Solar_code\solar_lib.h	130;"	v	line:130
-task1_armed	D:\PIC_Project\Solar_code\solar_lib.h	74;"	m	line:74	struct:flag
+target_act	C:\Documents and Settings\Kanawat\My Documents\GitHub\SolarTracker\Firmware_For_Rev3\main.c	492;"	l	line:492
+target_act_position	C:\Documents and Settings\Kanawat\My Documents\GitHub\SolarTracker\Firmware_For_Rev3\solar_lib.h	136;"	v	line:136
+task1_armed	C:\Documents and Settings\Kanawat\My Documents\GitHub\SolarTracker\Firmware_For_Rev3\solar_lib.h	80;"	m	line:80	struct:flag
 temp	C:\Program Files\PICC\Drivers\stdlib.h	772;"	l	line:772
-temp_mem	D:\PIC_Project\Solar_code\main.c	137;"	l	line:137
-temp_mem	D:\PIC_Project\Solar_code\solar_lib.h	656;"	l	line:656
-temp_mem	D:\PIC_Project\Solar_code\solar_lib.h	670;"	l	line:670
-tick	D:\PIC_Project\Solar_code\solar_lib.h	104;"	v	line:104
-tick2	D:\PIC_Project\Solar_code\solar_lib.h	105;"	v	line:105
-timer1_ovf	D:\PIC_Project\Solar_code\main.c	24;"	f	line:24
-timer_sec	D:\PIC_Project\Solar_code\solar_lib.h	103;"	v	line:103
+temp_mem	C:\Documents and Settings\Kanawat\My Documents\GitHub\SolarTracker\Firmware_For_Rev3\main.c	139;"	l	line:139
+temp_mem	C:\Documents and Settings\Kanawat\My Documents\GitHub\SolarTracker\Firmware_For_Rev3\solar_lib.h	663;"	l	line:663
+temp_mem	C:\Documents and Settings\Kanawat\My Documents\GitHub\SolarTracker\Firmware_For_Rev3\solar_lib.h	677;"	l	line:677
+tick	C:\Documents and Settings\Kanawat\My Documents\GitHub\SolarTracker\Firmware_For_Rev3\solar_lib.h	110;"	v	line:110
+tick2	C:\Documents and Settings\Kanawat\My Documents\GitHub\SolarTracker\Firmware_For_Rev3\solar_lib.h	111;"	v	line:111
+timer1_ovf	C:\Documents and Settings\Kanawat\My Documents\GitHub\SolarTracker\Firmware_For_Rev3\main.c	24;"	f	line:24
+timer_sec	C:\Documents and Settings\Kanawat\My Documents\GitHub\SolarTracker\Firmware_For_Rev3\solar_lib.h	109;"	v	line:109
 uc	C:\Program Files\PICC\Drivers\STRING.H	193;"	l	line:193
-unused	D:\PIC_Project\Solar_code\solar_lib.h	99;"	m	line:99	struct:LED_status
-unused3	D:\PIC_Project\Solar_code\solar_lib.h	92;"	m	line:92	struct:flag2
-update_time	D:\PIC_Project\Solar_code\solar_lib.h	75;"	m	line:75	struct:flag
+unused	C:\Documents and Settings\Kanawat\My Documents\GitHub\SolarTracker\Firmware_For_Rev3\solar_lib.h	105;"	m	line:105	struct:LED_status
+unused3	C:\Documents and Settings\Kanawat\My Documents\GitHub\SolarTracker\Firmware_For_Rev3\solar_lib.h	98;"	m	line:98	struct:flag2
+update_time	C:\Documents and Settings\Kanawat\My Documents\GitHub\SolarTracker\Firmware_For_Rev3\solar_lib.h	81;"	m	line:81	struct:flag
 val	C:\Program Files\PICC\Drivers\stdlib.h	1246;"	l	line:1246
 val	C:\Program Files\PICC\Drivers\stdlib.h	276;"	l	line:276
 val	C:\Program Files\PICC\Drivers\stdlib.h	284;"	l	line:284
-wait_loop	D:\PIC_Project\Solar_code\solar_lib.h	185;"	l	line:185
+wait_loop	C:\Documents and Settings\Kanawat\My Documents\GitHub\SolarTracker\Firmware_For_Rev3\solar_lib.h	191;"	l	line:191
 wchar_t::char	C:\Program Files\PICC\Drivers\STDDEF.H	22;"	d	line:22
 wcstombs	C:\Program Files\PICC\Drivers\stdlib.h	1178;"	f	line:1178	signature:(char *s,wchar_t *pwcs,size_t n)
 wctomb	C:\Program Files\PICC\Drivers\stdlib.h	1166;"	f	line:1166	signature:(char *s,wchar_t wchar)
-write_device_id	D:\PIC_Project\Solar_code\solar_lib.h	662;"	f	line:662	signature:()
-write_eeprom_data	D:\PIC_Project\Solar_code\solar_lib.h	694;"	f	line:694	signature:(int8 write_cal)
+write_device_id	C:\Documents and Settings\Kanawat\My Documents\GitHub\SolarTracker\Firmware_For_Rev3\solar_lib.h	669;"	f	line:669	signature:()
+write_eeprom_data	C:\Documents and Settings\Kanawat\My Documents\GitHub\SolarTracker\Firmware_For_Rev3\solar_lib.h	706;"	f	line:706	signature:(int8 write_cal)
 x	C:\Program Files\PICC\Drivers\stdlib.h	1028;"	l	line:1028
 x	C:\Program Files\PICC\Drivers\stdlib.h	1090;"	l	line:1090
-x00	D:\PIC_Project\Solar_code\main.c	28;"	l	line:28
-x80	D:\PIC_Project\Solar_code\main.c	30;"	l	line:30
-xxx	D:\PIC_Project\Solar_code\solar_lib.h	549;"	l	line:549
-yyy	D:\PIC_Project\Solar_code\solar_lib.h	550;"	l	line:550
+x00	C:\Documents and Settings\Kanawat\My Documents\GitHub\SolarTracker\Firmware_For_Rev3\main.c	28;"	l	line:28
+x80	C:\Documents and Settings\Kanawat\My Documents\GitHub\SolarTracker\Firmware_For_Rev3\main.c	30;"	l	line:30
+xxx	C:\Documents and Settings\Kanawat\My Documents\GitHub\SolarTracker\Firmware_For_Rev3\solar_lib.h	556;"	l	line:556
+yyy	C:\Documents and Settings\Kanawat\My Documents\GitHub\SolarTracker\Firmware_For_Rev3\solar_lib.h	557;"	l	line:557
