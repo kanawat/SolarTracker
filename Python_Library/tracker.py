@@ -148,25 +148,57 @@ class comm:
         self.send_serial_data(self.data_packet_assembler(addr,0x24,0x00),256)
         if (self.in_packet['Type'] != 4):
             return;
-        self.act_min_stroke = (self.in_packet['Data'][1]<<8)+self.in_packet['Data'][0]
-        self.act_max_stroke = (self.in_packet['Data'][3]<<8)+self.in_packet['Data'][2]
-        self.act_safety_stroke = (self.in_packet['Data'][5]<<8)+self.in_packet['Data'][4]
-        self.act_full_stroke_tick[0] = (self.in_packet['Data'][7]<<8)+self.in_packet['Data'][6]
-        self.act_full_stroke_tick[1] = (self.in_packet['Data'][9]<<8)+self.in_packet['Data'][8]
-        self.act_full_stroke_tick[2] = (self.in_packet['Data'][11]<<8)+self.in_packet['Data'][10]
-        self.act_full_stroke_tick[3] = (self.in_packet['Data'][13]<<8)+self.in_packet['Data'][12]
-        self.current_act_position[0] = (self.in_packet['Data'][15]<<8)+self.in_packet['Data'][14]
-        self.current_act_position[1] = (self.in_packet['Data'][17]<<8)+self.in_packet['Data'][16]
-        self.current_act_position[2] = (self.in_packet['Data'][19]<<8)+self.in_packet['Data'][18]
-        self.current_act_position[3] = (self.in_packet['Data'][21]<<8)+self.in_packet['Data'][20]
+        self.act_min_stroke={}
+        self.act_min_stroke[0]=(self.in_packet['Data'][1]<<8)+self.in_packet['Data'][0]
+        self.act_min_stroke[1]=(self.in_packet['Data'][3]<<8)+self.in_packet['Data'][2]
+        self.act_min_stroke[2]=(self.in_packet['Data'][5]<<8)+self.in_packet['Data'][4]
+        self.act_min_stroke[3]=(self.in_packet['Data'][7]<<8)+self.in_packet['Data'][6]
+
+        #self.act_min_stroke = (self.in_packet['Data'][1]<<8)+self.in_packet['Data'][0]
+        #self.act_max_stroke = (self.in_packet['Data'][3]<<8)+self.in_packet['Data'][2]
+        self.act_max_stroke={}
+
+        self.act_max_stroke[0]=(self.in_packet['Data'][9]<<8)+self.in_packet['Data'][8]
+        self.act_max_stroke[1]=(self.in_packet['Data'][11]<<8)+self.in_packet['Data'][10]
+        self.act_max_stroke[2]=(self.in_packet['Data'][13]<<8)+self.in_packet['Data'][12]
+        self.act_max_stroke[3]=(self.in_packet['Data'][15]<<8)+self.in_packet['Data'][14]
+
+        self.act_safety_stroke = (self.in_packet['Data'][17]<<8)+self.in_packet['Data'][16]
+
+        self.act_full_stroke_tick[0] = (self.in_packet['Data'][19]<<8)+self.in_packet['Data'][18]
+        self.act_full_stroke_tick[1] = (self.in_packet['Data'][21]<<8)+self.in_packet['Data'][20]
+        self.act_full_stroke_tick[2] = (self.in_packet['Data'][23]<<8)+self.in_packet['Data'][22]
+        self.act_full_stroke_tick[3] = (self.in_packet['Data'][25]<<8)+self.in_packet['Data'][24]
+
+        self.current_act_position[0] = (self.in_packet['Data'][27]<<8)+self.in_packet['Data'][26]
+        self.current_act_position[1] = (self.in_packet['Data'][29]<<8)+self.in_packet['Data'][28]
+        self.current_act_position[2] = (self.in_packet['Data'][31]<<8)+self.in_packet['Data'][30]
+        self.current_act_position[3] = (self.in_packet['Data'][33]<<8)+self.in_packet['Data'][32]
         if self.debug:
-            print ("Min Stroke = %f cm"%(self.act_min_stroke/256.0))
-            print ("Max Stroke = %f cm"%(self.act_max_stroke/256.0))
+            print ("Min Stroke = %s cm"%([self.act_min_stroke[k]/256.0 for k in self.act_min_stroke]))
+            print ("Max Stroke = %s cm"%([self.act_max_stroke[k]/256.0 for k in self.act_max_stroke]))
             print ("Safety Stroke = %f cm"%(self.act_safety_stroke/256.0))
             print ("ACT0 = %4d/%4d"%(self.current_act_position[0],self.act_full_stroke_tick[0]))
             print ("ACT1 = %4d/%4d"%(self.current_act_position[1],self.act_full_stroke_tick[1]))
             print ("ACT2 = %4d/%4d"%(self.current_act_position[2],self.act_full_stroke_tick[2]))
             print ("ACT3 = %4d/%4d"%(self.current_act_position[3],self.act_full_stroke_tick[3]))
+
+
+    def set_max_act_len(self,addr=0xfffe,actuator=0,length=123.5):
+        length = int(length*256)
+        self.clear_in_packet()
+        self.send_serial_data(self.data_packet_assembler(addr,0x28,(actuator&0x0003)|(length&0xFFFC)),256)
+        if self.debug:
+            print self.in_packet
+
+    def set_min_act_len(self,addr=0xfffe,actuator=0,length=123.5):
+        length = int(length*256)
+        self.clear_in_packet()
+        self.send_serial_data(self.data_packet_assembler(addr,0x27,(actuator&0x0003)|(length&0xFFFC)),256)
+        if self.debug:
+            print self.in_packet
+
+
 
     def move_actuator_east(self,addr=0xfffe,actuator=0,pulse=1):
         self.clear_in_packet()
@@ -193,6 +225,7 @@ class comm:
         self.send_serial_data(self.data_packet_assembler(addr,0x25,actuator),256)
         if self.debug:
             print self.in_packet
+            print("%s"%(self.in_packet['Data'][1]*256+self.in_packet['Data'][0]))
     def get_status_flag(self,addr=0xfffe):
         self.clear_in_packet()
         self.send_serial_data(self.data_packet_assembler(addr,0x11,0),256)

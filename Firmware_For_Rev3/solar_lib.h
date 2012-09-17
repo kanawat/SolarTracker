@@ -438,6 +438,7 @@ void stuff_data(int8 data_to_stuff) {
 //9 = DATE TIME
 //10 = STATUS FLAGS
 //11 = DEVICE ID
+//12 = target act
 void send_data(int8 packet_type,int8 size) {
 	int8 i;
 	output_checksum=0;

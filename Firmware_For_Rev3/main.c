@@ -248,9 +248,11 @@ void process_cmd_msg() {
               }   
       // 0x25 = execute move on actuator to target position
      case 0x25: {   if (flag2.is_moving) {send_data(1,0); break;}
-               send_data(0,0);
+              // send_data(0,0);
                   if (act_full_stroke_tick[(int8) aux_command] > 0x10) {
                   solar_get_act_length((int8) aux_command);
+				memcpy(output_buffer,&target_act_position,2);
+				send_data(11,1);
                 actuator_move_execute((int8) aux_command);
                }
                 last_actuator_pulse = actuator_pulse;
@@ -266,14 +268,18 @@ void process_cmd_msg() {
 	 case 0x27: { // set min actuator len ( len_in_cm x 256 )
 				act_min_stroke[(int8) (aux_command & 0x0003)]=aux_command&0xFFFC;
 				write_eeprom_data(1);
+				send_data(0,0);
 				break;
 		}	
 
 	 case 0x28: {
 				act_max_stroke[(int8) (aux_command & 0x0003)]=aux_command&0xFFFC;
 				write_eeprom_data(1);
+				send_data(0,0);
 				break;
 		}	
+
+
 
  
 // level 1 command is for generic status
